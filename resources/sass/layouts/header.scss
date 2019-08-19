@@ -1,0 +1,73 @@
+.header-container {
+  background:
+          linear-gradient(45deg, $gray 50%, transparent 50%),
+          radial-gradient($gray 4px, transparent 4px),
+          radial-gradient($gray 4px, transparent 4px),
+          transparent;
+  background-size: 100%, 24px 24px, 24px 24px, 100%;
+  background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+}
+
+.header {
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.header__item {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.header__item--right {
+  float: right;
+}
+
+.header__item--open-menu {
+  background-color: $white;
+  color: $black;
+}
+
+.header__item--logo {
+  font-weight: bold;
+}
+
+.header__button {
+  display: inline-block;
+  background-color: $white;
+  color: $gray;
+  min-height: 25px;
+  min-width: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  text-align: center;
+  border-right: 1px solid $gray;
+  cursor: pointer;
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  &:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right-width: 0;
+  }
+}
+
+@each $color, $value in $color-list {
+  .header__button--#{$color}:hover i { color: $value !important; }
+}
+
+.header__button--selected {
+  // todo
+}
+
+.header__button__flag {
+  height: 12.5px;
+  width: auto;
+  filter: grayscale(100%);
+}
+
+.header__button:hover .header__button__flag {
+  filter: none;
+}

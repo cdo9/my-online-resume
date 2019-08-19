@@ -1,12 +1,5 @@
-// Body
-$body-bg: #f8fafc;
-
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
-
 // Colors
+$white: #fff;
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -17,3 +10,26 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$gray: #636b6f;
+$black: #191414;
+
+$color-list: (
+  (white, $white),
+  (blue, $blue),
+  (indigo, $indigo),
+  (purple, $purple),
+  (pink, $pink),
+  (red, $red),
+  (orange, $orange),
+  (yellow, $yellow),
+  (green, $green),
+  (teal, $teal),
+  (cyan, $cyan),
+  (gray, $gray),
+  (black, $black),
+);
+
+@each $color, $value in $color-list {
+  .color-#{$color} { color: $value !important; }
+  .bg-#{$color} { background-color: $value !important; fill: $value !important;  }
+}

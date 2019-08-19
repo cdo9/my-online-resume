@@ -1,2 +1,475 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _reset.scss
+* Description:  reset default browsers styles
+* Author:       Christophe DO OUTEIRO
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _mixins.scss
+* Description:  The purpose of this library is to facilitate the use of CSS
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _browser-prefix		($property, $value)
+* _align-items			($value)
+* _animation			($properties)
+* _blur					($blur: 1px)
+* _border-radius		($radius: 3px)
+* _box-shadow			($x: 0, $y: 0, $blur: 1px, $color: rgba(0,0,0,.4), $inset: "")
+* _box-sizing			($type: border-box)
+* _display-flex
+* _double-border		($colorOne, $colorTwo, $sizeOne: 1px, $sizeTwo: 1px, $radius: 0)
+* _flex-grow			($number : 1)
+* _flex-wrap			($value)
+* _font-size			($size)
+* _image-2x				($url, $width, $height)
+* _justify-content		($value)
+* _keyframes			($animation-name)
+* _linear-gradient		($direction, $start-color, $start-position, $end-color, $end-position)
+* _opacity				($opacity: 0.5)
+* _transform			($params)
+* _transition			($properties)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* _align-items
+===========================================*/
+
+/* _animation
+===========================================*/
+
+/* _blur
+===========================================*/
+
+/* _border-radius
+===========================================*/
+
+/* _box-shadow
+===========================================*/
+
+/* _box-sizing
+===========================================*/
+
+/* _display-flex
+===========================================*/
+
+/* _double-border
+===========================================*/
+
+/* _flex-grow
+===========================================*/
+
+/* _flex-wrap
+===========================================*/
+
+/* _font-size
+===========================================*/
+
+/* _image-2x
+===========================================*/
+
+/* _justify-content
+===========================================*/
+
+/* _keyframes
+===========================================*/
+
+/* linear-gradient
+===========================================*/
+
+/* _multiLineEllipsis
+===========================================*/
+
+/* _opacity
+===========================================*/
+
+/* _transform
+===========================================*/
+
+/* _transition
+===========================================*/
+
+.color-white {
+  color: #fff !important;
+}
+
+.bg-white {
+  background-color: #fff !important;
+  fill: #fff !important;
+}
+
+.color-blue {
+  color: #3490dc !important;
+}
+
+.bg-blue {
+  background-color: #3490dc !important;
+  fill: #3490dc !important;
+}
+
+.color-indigo {
+  color: #6574cd !important;
+}
+
+.bg-indigo {
+  background-color: #6574cd !important;
+  fill: #6574cd !important;
+}
+
+.color-purple {
+  color: #9561e2 !important;
+}
+
+.bg-purple {
+  background-color: #9561e2 !important;
+  fill: #9561e2 !important;
+}
+
+.color-pink {
+  color: #f66d9b !important;
+}
+
+.bg-pink {
+  background-color: #f66d9b !important;
+  fill: #f66d9b !important;
+}
+
+.color-red {
+  color: #e3342f !important;
+}
+
+.bg-red {
+  background-color: #e3342f !important;
+  fill: #e3342f !important;
+}
+
+.color-orange {
+  color: #f6993f !important;
+}
+
+.bg-orange {
+  background-color: #f6993f !important;
+  fill: #f6993f !important;
+}
+
+.color-yellow {
+  color: #ffed4a !important;
+}
+
+.bg-yellow {
+  background-color: #ffed4a !important;
+  fill: #ffed4a !important;
+}
+
+.color-green {
+  color: #38c172 !important;
+}
+
+.bg-green {
+  background-color: #38c172 !important;
+  fill: #38c172 !important;
+}
+
+.color-teal {
+  color: #4dc0b5 !important;
+}
+
+.bg-teal {
+  background-color: #4dc0b5 !important;
+  fill: #4dc0b5 !important;
+}
+
+.color-cyan {
+  color: #6cb2eb !important;
+}
+
+.bg-cyan {
+  background-color: #6cb2eb !important;
+  fill: #6cb2eb !important;
+}
+
+.color-gray {
+  color: #636b6f !important;
+}
+
+.bg-gray {
+  background-color: #636b6f !important;
+  fill: #636b6f !important;
+}
+
+.color-black {
+  color: #191414 !important;
+}
+
+.bg-black {
+  background-color: #191414 !important;
+  fill: #191414 !important;
+}
+
+html,
+body {
+  background-color: #191414;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0;
+}
+
+.header-container {
+  background: linear-gradient(45deg, #636b6f 50%, transparent 50%), radial-gradient(#636b6f 4px, transparent 4px), radial-gradient(#636b6f 4px, transparent 4px), transparent;
+  background-size: 100%, 24px 24px, 24px 24px, 100%;
+  background-position: 0 0, -2px 6px, 10px 18px, 0 0;
+}
+
+.header {
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+
+.header__item {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.header__item--right {
+  float: right;
+}
+
+.header__item--open-menu {
+  background-color: #fff;
+  color: #191414;
+}
+
+.header__item--logo {
+  font-weight: bold;
+}
+
+.header__button {
+  display: inline-block;
+  background-color: #fff;
+  color: #636b6f;
+  min-height: 25px;
+  min-width: 25px;
+  line-height: 25px;
+  padding: 0 5px;
+  text-align: center;
+  border-right: 1px solid #636b6f;
+  cursor: pointer;
+}
+
+.header__button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.header__button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right-width: 0;
+}
+
+.header__button--white:hover i {
+  color: #fff !important;
+}
+
+.header__button--blue:hover i {
+  color: #3490dc !important;
+}
+
+.header__button--indigo:hover i {
+  color: #6574cd !important;
+}
+
+.header__button--purple:hover i {
+  color: #9561e2 !important;
+}
+
+.header__button--pink:hover i {
+  color: #f66d9b !important;
+}
+
+.header__button--red:hover i {
+  color: #e3342f !important;
+}
+
+.header__button--orange:hover i {
+  color: #f6993f !important;
+}
+
+.header__button--yellow:hover i {
+  color: #ffed4a !important;
+}
+
+.header__button--green:hover i {
+  color: #38c172 !important;
+}
+
+.header__button--teal:hover i {
+  color: #4dc0b5 !important;
+}
+
+.header__button--cyan:hover i {
+  color: #6cb2eb !important;
+}
+
+.header__button--gray:hover i {
+  color: #636b6f !important;
+}
+
+.header__button--black:hover i {
+  color: #191414 !important;
+}
+
+.header__button__flag {
+  height: 12.5px;
+  width: auto;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.header__button:hover .header__button__flag {
+  -webkit-filter: none;
+          filter: none;
+}
 
