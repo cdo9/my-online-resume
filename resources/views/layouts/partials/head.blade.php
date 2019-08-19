@@ -18,4 +18,6 @@
     <!-- /Head Scripts -->
     @stack('after-head-scripts')
 </head>
-<body>
+<body class="">
+    @include("layouts.partials.navbar")
+    <div class="main">

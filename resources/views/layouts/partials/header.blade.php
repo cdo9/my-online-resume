@@ -1,3 +1,4 @@
+{{--
 <div class="header-container">
     <header class="header">
         <div class="header__item header__item--open-menu">
@@ -22,3 +23,4 @@
         </div>
     </header>
 </div>
+--}}
