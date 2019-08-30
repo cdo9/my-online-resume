@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Filename:     _reset.scss
 * Description:  reset default browsers styles
 * Author:       Christophe DO OUTEIRO
@@ -355,6 +355,54 @@ body {
   margin: 0;
 }
 
+.content {
+  padding: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 10px 0 0;
+  font-weight: bold;
+}
+
+.cv {
+  padding: 10px 0;
+}
+
+.cv__title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 5px 0 3px;
+  font-weight: bold;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__category {
+  display: inline-block;
+  padding: 5px;
+  float: left;
+}
+
+.skill {
+  display: inline-block;
+  padding: 3px 5px;
+  background-color: #fff;
+  color: #191414;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 14px;
+  vertical-align: middle;
+  border-width: 5px;
+  border-style: solid;
+}
+
 .header-container {
   background: linear-gradient(45deg, #636b6f 50%, transparent 50%), radial-gradient(#636b6f 4px, transparent 4px), radial-gradient(#636b6f 4px, transparent 4px), transparent;
   background-size: 100%, 24px 24px, 24px 24px, 100%;
@@ -473,109 +521,104 @@ body {
           filter: none;
 }
 
-.main {
-  margin-left: 120px;
-  /* Same as the width of the sidenav */
-  font-size: 28px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
 .navbar {
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  background-color: #6cb2eb;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #636b6f;
 }
 
 .navbar__item {
-  display: block;
-  padding: 5px;
+  display: inline-block;
+  padding: 0 5px;
   text-align: center;
   color: #fff;
-  border-bottom: 1px dashed #fff;
-}
-
-.navbar__item:hover {
-  background-color: #3f9ae5;
-}
-
-.navbar__item--no-hover:hover {
-  background-color: transparent;
-}
-
-.navbar__item--logo {
-  background: linear-gradient(45deg, #6cb2eb 50%, transparent 50%), radial-gradient(#fff 4px, transparent 4px), radial-gradient(#fff 4px, transparent 4px), transparent;
-  background-size: 100%, 24px 24px, 24px 24px, 100%;
-  background-position: 0 0, -2px 6px, 10px 18px, 0 0;
-  padding: 20px 0;
+  vertical-align: middle;
 }
 
 .navbar__item__logo {
-  font-size: 24px;
-  font-size: 1.5rem;
-  display: inline-block;
+  display: block;
+  font-family: "Pacifico", cursive;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   background-color: #fff;
-  color: #6cb2eb;
-  border: 2px solid #6cb2eb;
-  margin: 10px auto;
-  padding: 10px;
+  color: #636b6f;
+  padding: 5px 8px;
   text-align: center;
+  border-radius: 5px;
+}
+
+.navbar__item__logo:hover {
+  color: #fff;
+  background-color: #4b5154;
 }
 
 .navbar__item__icon {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 26px;
+  font-size: 1.625rem;
   padding: 5px;
 }
 
 .navbar__item__title {
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   padding: 5px;
   font-weight: bold;
 }
 
 .navbar__item__flags__flag {
   display: inline-block;
-  width: 50%;
-  box-sizing: border-box;
-  padding: 5px;
+  text-decoration: none;
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .navbar__item__flags__flag img {
-  width: 70%;
-  height: auto;
-  border: 2px solid #fff;
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+  border-right: 2px solid #636b6f;
 }
 
-.navbar__item__buttons {
-  padding: 5px 0;
+.navbar__item__flags__flag:first-child img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.navbar__item__flags__flag:last-child img {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-width: 0;
+}
+
+.navbar__item__flags__flag:hover,
+.navbar__item__flags__flag--selected {
+  opacity: 0.8;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
 }
 
 .navbar__item__buttons__button {
   display: inline-block;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   padding: 5px 8px;
-  background-color: #f2f2f2;
-  color: #6cb2eb;
-  border-right: 2px dotted #636b6f;
+  background-color: #4b5154;
+  color: #fff;
+  border-right: 2px solid #636b6f;
 }
 
 .navbar__item__buttons__button:hover {
-  border-bottom: 2px solid #fff;
+  background-color: #fff;
+  color: #636b6f;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar__item__buttons__button:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
-  border-right: 2px dotted #f66d9b;
 }
 
 .navbar__item__buttons__button:last-child {
@@ -586,21 +629,6 @@ body {
 
 .navbar__item__buttons__button--selected {
   background-color: #fff;
-  border-bottom: 2px solid #fff;
-}
-
-.navbar__item__buttons__button--colored {
-  background-color: #f66d9b;
-  color: #fff;
-}
-
-.navbar__item__buttons__button--light {
-  background-color: #f2f2f2;
-  color: #f6993f;
-}
-
-.navbar__item__buttons__button--night {
-  background-color: #636b6f;
-  color: #fff;
+  color: #636b6f;
 }
 
