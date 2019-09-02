@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <div class="content">
-        <h1 class="title">Curriculum vitae</h1>
+        <h1 class="title">@lang('cv.page-title')</h1>
         <div class="cv">
             {{-- @include('cv.partials.me') --}}
             @include('cv.partials.skills')

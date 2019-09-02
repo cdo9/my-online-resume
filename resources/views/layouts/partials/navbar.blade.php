@@ -6,11 +6,11 @@
     </div>
     <div class="navbar__item">
         <div class="navbar__item__buttons">
-            <a href="#" class="navbar__item__buttons__button navbar__item__buttons__button--light">
+            <a href="{{ route('switch-theme', ['theme' => 'light']) }}" class="navbar__item__buttons__button navbar__item__buttons__button--light @if(session('theme') == "light")) navbar__item__buttons__button--selected @endif">
                 <i class="fad fa-sun"></i>
-            </a><a href="#" class="navbar__item__buttons__button navbar__item__buttons__button--colored navbar__item__buttons__button--selected">
+            </a><a href="{{ route('switch-theme', ['theme' => 'colored']) }}" class="navbar__item__buttons__button navbar__item__buttons__button--colored @if(!session('theme') || session('theme') == "colored")) navbar__item__buttons__button--selected @endif">
                 <i class="fad fa-palette"></i>
-            </a><a href="#" class="navbar__item__buttons__button navbar__item__buttons__button--night">
+            </a><a href="{{ route('switch-theme', ['theme' => 'night']) }}" class="navbar__item__buttons__button navbar__item__buttons__button--night @if(session('theme') == "night")) navbar__item__buttons__button--selected @endif">
                 <i class="fad fa-moon"></i>
             </a>
         </div>

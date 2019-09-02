@@ -18,6 +18,6 @@
     <!-- /Head Scripts -->
     @stack('after-head-scripts')
 </head>
-<body class="">
+<body class="{{ session('theme') }}">
     @include("layouts.partials.navbar")
     <div class="main">

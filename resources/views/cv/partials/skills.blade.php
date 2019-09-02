@@ -1,4 +1,4 @@
-<h2 class="cv__title"><i class="fad fa-fw fa-toolbox"></i> Skills</h2>
+<h2 class="cv__title"><i class="fad fa-fw fa-toolbox"></i> @lang('cv.skills')</h2>
 <ul class="skills">
     @foreach($skills as $skill)
         <li class="skill skill--main" style="border-color: {{ $skill->color }};">{{ $skill->name }}</li>
