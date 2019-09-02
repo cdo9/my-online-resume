@@ -1,3 +1,16 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _cv.scss
+* Description:  Curriculum vitae
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _base
+* _skills
+* _projects
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* _base
+===========================================*/
 .cv {
   padding: 10px 0;
 }
@@ -9,6 +22,8 @@
   font-weight: bold;
 }
 
+/* _skills
+===========================================*/
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -39,5 +54,37 @@
 }
 
 .skill--child {
+
+}
+
+.skill-title {
+  display: inline-block;
+  padding: 3px 5px 3px 0;
+  @include font-size(13px);
+  font-weight: bold;
+  line-height: 14px;
+  vertical-align: middle;
+  border: 5px solid transparent;
+  border-left-width: 0px;
+}
+
+/* _projects
+===========================================*/
+.project__title {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 5px;
+}
+
+.project__title__plus {
+  @include font-size(13px);
+  //font-weight: bold;
+  font-style: italic;
+  &:before {
+    content: "• ";
+  }
+}
+
+.project_skills {
 
 }

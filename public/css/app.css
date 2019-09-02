@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap);@import url(https://fonts.googleapis.com/css?family=Vibur&display=swap);@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);@charset "UTF-8";
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 * Filename:     _reset.scss
 * Description:  reset default browsers styles
 * Author:       Christophe DO OUTEIRO
@@ -253,6 +255,15 @@ a {
   fill: #ecf0f1 !important;
 }
 
+.color-lightgray {
+  color: #bdc3c7 !important;
+}
+
+.bg-lightgray {
+  background-color: #bdc3c7 !important;
+  fill: #bdc3c7 !important;
+}
+
 .color-blue {
   color: #3490dc !important;
 }
@@ -382,6 +393,20 @@ body {
   font-weight: bold;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _cv.scss
+* Description:  Curriculum vitae
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _base
+* _skills
+* _projects
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* _base
+===========================================*/
+
 .cv {
   padding: 10px 0;
 }
@@ -393,6 +418,9 @@ body {
   padding: 8px 0 5px;
   font-weight: bold;
 }
+
+/* _skills
+===========================================*/
 
 .skills {
   display: flex;
@@ -417,6 +445,37 @@ body {
   vertical-align: middle;
   border-width: 5px;
   border-style: solid;
+}
+
+.skill-title {
+  display: inline-block;
+  padding: 3px 5px 3px 0;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  line-height: 14px;
+  vertical-align: middle;
+  border: 5px solid transparent;
+  border-left-width: 0px;
+}
+
+/* _projects
+===========================================*/
+
+.project__title {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 5px;
+}
+
+.project__title__plus {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  font-style: italic;
+}
+
+.project__title__plus:before {
+  content: "\2022   ";
 }
 
 .header-container {
@@ -475,6 +534,10 @@ body {
 
 .header__button--white:hover i {
   color: #ecf0f1 !important;
+}
+
+.header__button--lightgray:hover i {
+  color: #bdc3c7 !important;
 }
 
 .header__button--blue:hover i {
@@ -571,11 +634,6 @@ body {
   border-radius: 5px;
 }
 
-.navbar__item__logo:hover {
-  color: #ecf0f1;
-  background-color: #4b5154;
-}
-
 .navbar__item__icon {
   font-size: 26px;
   font-size: 1.625rem;
@@ -595,13 +653,13 @@ body {
   opacity: 0.5;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  border-right: 2px solid #2d3436;
 }
 
 .navbar__item__flags__flag img {
   height: 30px;
   width: auto;
   vertical-align: middle;
-  border-right: 2px solid #636b6f;
 }
 
 .navbar__item__flags__flag:first-child img {
@@ -609,10 +667,13 @@ body {
   border-bottom-left-radius: 5px;
 }
 
+.navbar__item__flags__flag:last-child {
+  border-width: 0;
+}
+
 .navbar__item__flags__flag:last-child img {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-width: 0;
 }
 
 .navbar__item__flags__flag:hover,
@@ -627,9 +688,9 @@ body {
   font-size: 20px;
   font-size: 1.25rem;
   padding: 5px 5px;
-  background-color: #4b5154;
+  background-color: #636b6f;
   color: #ecf0f1;
-  border-right: 2px solid #636b6f;
+  border-right: 2px solid #2d3436;
 }
 
 .navbar__item__buttons__button:hover {

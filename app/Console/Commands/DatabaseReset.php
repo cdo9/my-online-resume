@@ -37,8 +37,8 @@ class DatabaseReset extends Command
      * @return mixed
      */
     public function handle() {
-        $this->warn('This command import the file "db.sql" and launch migrations. All recent data will be deleted.');
-        if($this->confirm('Are you sure ?')) {
+        //$this->warn('This command import the file "db.sql" and launch migrations. All recent data will be deleted.');
+        //if($this->confirm('Are you sure ?')) {
             $databaseName = env('DB_DATABASE');
             $databasePassword = env('DB_PASSWORD');
             $this->info('Dropping database...');
@@ -54,6 +54,6 @@ class DatabaseReset extends Command
             Artisan::call('migrate');
             $this->info(Artisan::output());
             $this->info('Database migrated');
-        }
+        //}
     }
 }

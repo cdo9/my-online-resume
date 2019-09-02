@@ -5,7 +5,7 @@
         <div class="cv">
             {{-- @include('cv.partials.me') --}}
             @include('cv.partials.skills')
-            {{-- @include('cv.partials.projects') --}}
+            @include('cv.partials.projects')
         </div>
     </div>
 

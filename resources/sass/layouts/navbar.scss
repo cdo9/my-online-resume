@@ -28,8 +28,8 @@
   text-align: center;
   @include border-radius(5px);
   &:hover {
-    color: $white;
-    background-color: darken($gray, 10%);
+    //color: $white;
+    //background-color: $lightgray;
   }
 
 }
@@ -54,19 +54,22 @@
   text-decoration: none;
   opacity: 0.5;
   filter: grayscale(100%);
+  border-right: 2px solid $black;
   img {
     height: 30px;
     width: auto;
     vertical-align: middle;
-    border-right: 2px solid $gray;
+
   }
   &:first-child img {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  &:last-child img {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  &:last-child {
+    img {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
     border-width: 0;
   }
 }
@@ -83,9 +86,9 @@
   display: inline-block;
   @include font-size(20px);
   padding: 5px 5px;
-  background-color: darken($gray, 10%);
+  background-color: $gray;
   color: $white;
-  border-right: 2px solid $gray;
+  border-right: 2px solid $black;
   &:hover {
     background-color: $white;
     color: $gray;
