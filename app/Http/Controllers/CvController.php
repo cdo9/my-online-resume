@@ -11,6 +11,6 @@ class CvController extends Controller
     public function index() {
         $skills = Skill::where('parent_id', null)->with('childs')->get();
         $projects = Project::all();
-        return view('index', compact('skills', 'projects'));
+        return view('cv.index', compact('skills', 'projects'));
     }
 }

@@ -17,15 +17,15 @@
     </div>
     <div class="navbar__item">
         <div class="navbar__item__flags">
-            <a href="#" class="navbar__item__flags__flag navbar__item__flags__flag--selected">
+            <a href="{{ route('switch-locale', ['locale' => 'fr']) }}" class="navbar__item__flags__flag @if(session('locale') == "fr") navbar__item__flags__flag--selected @endif">
                 <img src="{{ asset('images/flags/fr.svg') }}"/>
-            </a><a href="#" class="navbar__item__flags__flag">
+            </a><a href="{{ route('switch-locale', ['locale' => 'pt']) }}" class="navbar__item__flags__flag @if(session('locale') == "pt") navbar__item__flags__flag--selected @endif">
                 <img src="{{ asset('images/flags/pt.svg') }}"/>
-            </a><a href="#" class="navbar__item__flags__flag">
+            </a><a href="{{ route('switch-locale', ['locale' => 'en']) }}" class="navbar__item__flags__flag @if(session('locale') == "en") navbar__item__flags__flag--selected @endif">
                 <img src="{{ asset('images/flags/en.svg') }}"/>
-            </a><a href="#" class="navbar__item__flags__flag">
+            </a><!--<a href="{{ route('switch-locale', ['locale' => 'es']) }}" class="navbar__item__flags__flag @if(session('locale') == "es") navbar__item__flags__flag--selected @endif">
                 <img src="{{ asset('images/flags/es.svg') }}"/>
-            </a>
+            </a>-->
         </div>
         <!--<div class="navbar__item__title">Bonjour!</div>-->
     </div>

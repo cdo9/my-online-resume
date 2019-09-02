@@ -8,4 +8,6 @@ class Project extends Model {
 
     protected $fillable = ['slug', 'name',];
 
+    public function skills() { return $this->belongsToMany(Skill::class); }
+
 }
