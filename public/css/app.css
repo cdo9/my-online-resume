@@ -228,13 +228,29 @@ a {
 /* _transition
 ===========================================*/
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _variables.scss
+* Description:  Main project variables
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _breakpoints
+* _colors
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* _breakpoints
+===========================================*/
+
+/* _colors
+===========================================*/
+
 .color-white {
-  color: #fff !important;
+  color: #ecf0f1 !important;
 }
 
 .bg-white {
-  background-color: #fff !important;
-  fill: #fff !important;
+  background-color: #ecf0f1 !important;
+  fill: #ecf0f1 !important;
 }
 
 .color-blue {
@@ -337,18 +353,18 @@ a {
 }
 
 .color-black {
-  color: #191414 !important;
+  color: #2d3436 !important;
 }
 
 .bg-black {
-  background-color: #191414 !important;
-  fill: #191414 !important;
+  background-color: #2d3436 !important;
+  fill: #2d3436 !important;
 }
 
 html,
 body {
-  background-color: #fff;
-  color: #191414;
+  background-color: #ecf0f1;
+  color: #2d3436;
   font-family: "DM Sans", sans-serif;
   font-weight: 200;
   font-size: 16px;
@@ -392,8 +408,8 @@ body {
 .skill {
   display: inline-block;
   padding: 3px 5px;
-  background-color: #fff;
-  color: #191414;
+  background-color: #ecf0f1;
+  color: #2d3436;
   font-size: 13px;
   font-size: 0.8125rem;
   font-weight: bold;
@@ -425,8 +441,8 @@ body {
 }
 
 .header__item--open-menu {
-  background-color: #fff;
-  color: #191414;
+  background-color: #ecf0f1;
+  color: #2d3436;
 }
 
 .header__item--logo {
@@ -435,7 +451,7 @@ body {
 
 .header__button {
   display: inline-block;
-  background-color: #fff;
+  background-color: #ecf0f1;
   color: #636b6f;
   min-height: 25px;
   min-width: 25px;
@@ -458,7 +474,7 @@ body {
 }
 
 .header__button--white:hover i {
-  color: #fff !important;
+  color: #ecf0f1 !important;
 }
 
 .header__button--blue:hover i {
@@ -506,7 +522,7 @@ body {
 }
 
 .header__button--black:hover i {
-  color: #191414 !important;
+  color: #2d3436 !important;
 }
 
 .header__button__flag {
@@ -525,14 +541,20 @@ body {
   width: 100%;
   padding: 5px;
   box-sizing: border-box;
-  background-color: #636b6f;
+  background-color: #3490dc;
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    text-align: center;
+  }
 }
 
 .navbar__item {
   display: inline-block;
   padding: 0 5px;
   text-align: center;
-  color: #fff;
+  color: #ecf0f1;
   vertical-align: middle;
 }
 
@@ -542,15 +564,15 @@ body {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: #fff;
-  color: #636b6f;
+  background-color: #ecf0f1;
+  color: #3490dc;
   padding: 5px 8px;
   text-align: center;
   border-radius: 5px;
 }
 
 .navbar__item__logo:hover {
-  color: #fff;
+  color: #ecf0f1;
   background-color: #4b5154;
 }
 
@@ -606,12 +628,12 @@ body {
   font-size: 1.25rem;
   padding: 5px 5px;
   background-color: #4b5154;
-  color: #fff;
+  color: #ecf0f1;
   border-right: 2px solid #636b6f;
 }
 
 .navbar__item__buttons__button:hover {
-  background-color: #fff;
+  background-color: #ecf0f1;
   color: #636b6f;
   transition: 0.3s ease-in-out;
 }
@@ -628,7 +650,45 @@ body {
 }
 
 .navbar__item__buttons__button--selected {
-  background-color: #fff;
+  background-color: #ecf0f1;
   color: #636b6f;
+}
+
+body.light {
+  background-color: #ecf0f1;
+  color: #2d3436;
+  /* _navbar
+  ===========================================*/
+}
+
+body.light .navbar {
+  background-color: #ecf0f1;
+}
+
+body.light .navbar__item__logo {
+  background-color: #636b6f;
+  color: #ecf0f1;
+}
+
+body.light .navbar__item__buttons__button:hover,
+body.light .navbar__item__buttons__button--selected {
+  background-color: #bdc3c7;
+  color: #636b6f;
+}
+
+body.night {
+  background-color: #2d3436;
+  color: #ecf0f1;
+  /* _navbar
+  ===========================================*/
+}
+
+body.night .navbar {
+  background-color: #2d3436;
+}
+
+body.night .navbar__item__logo {
+  background-color: #636b6f;
+  color: #2d3436;
 }
 

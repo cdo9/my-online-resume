@@ -1,0 +1,14 @@
+body.night {
+  background-color: $black;
+  color: $white;
+  /* _navbar
+  ===========================================*/
+  .navbar {
+    background-color: $black;
+    //border-bottom-color: $gray;
+  }
+  .navbar__item__logo {
+    background-color: $gray;
+    color: $black;
+  }
+}

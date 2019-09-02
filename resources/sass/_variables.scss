@@ -1,5 +1,47 @@
-// Colors
-$white: #fff;
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* Filename:     _variables.scss
+* Description:  Main project variables
+* Author:       Christophe DO OUTEIRO
+*** INDEX: ************************************************************
+*
+* _breakpoints
+* _colors
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* _breakpoints
+===========================================*/
+$mobile-small:	240px;
+$mobile-large:	320px;
+$tablet-small:	480px;
+$tablet-large:	768px;
+$screen-small:	1024px;
+$screen-large:	1280px;
+
+@mixin media($point) {
+  @if $point == 'mobile-small' {
+    @media (max-width: $mobile-small) { @content ; }
+  }
+  @else if $point == 'mobile-large' {
+    @media (max-width: $mobile-large) { @content ; }
+  }
+  @else if $point == 'tablet-small' {
+    @media (max-width: $tablet-small) { @content ; }
+  }
+  @else if $point == 'tablet-large' {
+    @media (max-width: $tablet-large)  { @content ; }
+  }
+  @else if $point == 'screen-small' {
+    @media (max-width: $screen-small)  { @content ; }
+  }
+  @else if $point == 'screen-large' {
+    @media (max-width: $screen-large)  { @content ; }
+  }
+}
+
+/* _colors
+===========================================*/
+$white: #ecf0f1;
+$lightgray: #bdc3c7;
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -11,25 +53,26 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 $gray: #636b6f;
-$black: #191414;
+$black: #2d3436; //#191414; old black
 
 $color-list: (
-  (white, $white),
-  (blue, $blue),
-  (indigo, $indigo),
-  (purple, $purple),
-  (pink, $pink),
-  (red, $red),
-  (orange, $orange),
-  (yellow, $yellow),
-  (green, $green),
-  (teal, $teal),
-  (cyan, $cyan),
-  (gray, $gray),
-  (black, $black),
+                (white, $white),
+                (blue, $blue),
+                (indigo, $indigo),
+                (purple, $purple),
+                (pink, $pink),
+                (red, $red),
+                (orange, $orange),
+                (yellow, $yellow),
+                (green, $green),
+                (teal, $teal),
+                (cyan, $cyan),
+                (gray, $gray),
+                (black, $black),
 );
 
 @each $color, $value in $color-list {
   .color-#{$color} { color: $value !important; }
   .bg-#{$color} { background-color: $value !important; fill: $value !important;  }
 }
+
