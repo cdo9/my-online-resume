@@ -20,7 +20,6 @@ class CreateSkillsTable extends Migration
             $table->string('slug')->unique();
             $table->string('name');
             $table->string('color')->nullable();
-            $table->boolean('senior')->nullable(); // todo add to seed
             $table->unsignedBigInteger('parent_id')->nullable();
             $table->foreign('parent_id')->references('id')->on('skills');
             $table->timestamps();
@@ -55,6 +54,8 @@ class CreateSkillsTable extends Migration
         Skill::create(['slug' => 'laravel', 'name' => 'Laravel', 'color' => '', 'parent_id' => $skillPhp->id]);
         Skill::create(['slug' => 'symfony', 'name' => 'Symfony', 'color' => '', 'parent_id' => $skillPhp->id]);
         Skill::create(['slug' => 'yii', 'name' => 'Yii', 'color' => '', 'parent_id' => $skillPhp->id]);
+        Skill::create(['slug' => 'zend', 'name' => 'Zend', 'color' => '', 'parent_id' => $skillPhp->id]);
+
 
         Skill::create(['slug' => 'sql', 'name' => 'SQL', 'color' => '#dad8d8', 'parent_id' => null]);
 

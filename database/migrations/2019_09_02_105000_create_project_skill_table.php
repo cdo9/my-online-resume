@@ -40,8 +40,38 @@ class CreateProjectSkillTable extends Migration
 
     public function seed()
     {
+        // Skills
         $skillLaravel = Skill::where('slug', 'laravel')->first();
-        Project::where('slug', 'remplafrance')->first()->skills()->attach($skillLaravel);
+        $skillYii = Skill::where('slug', 'yii')->first();
+        $skillZend = Skill::where('slug', 'zend')->first();
+        $skillHtml = Skill::where('slug', 'html')->first();
+
+        // Projects
+        $projectRemplafrance = Project::where('slug', 'remplafrance')->first()->skills();
+        $projectVictorCharles = Project::where('slug', 'victor-charles')->first()->skills();
+        $projectBdbuzz = Project::where('slug', 'bdbuzz')->first()->skills();
+        $projectNolimBd = Project::where('slug', 'nolim-bd')->first()->skills();
+        $projectLookaya = Project::where('slug', 'lookaya')->first()->skills();
+
+        // Attach to project Remplafrance
+        $projectRemplafrance->attach($skillLaravel);
+        $projectRemplafrance->attach($skillHtml);
+
+        // Attach to project Victor & Charles
+        $projectVictorCharles->attach($skillLaravel);
+        $projectVictorCharles->attach($skillHtml);
+
+        // Attach to project bdBuzz
+        $projectBdbuzz->attach($skillYii);
+        $projectBdbuzz->attach($skillHtml);
+
+        // Attach to project NolimBD
+        $projectNolimBd->attach($skillYii);
+        $projectNolimBd->attach($skillHtml);
+
+        // Attach to project Lookaya
+        $projectLookaya->attach($skillZend);
+        $projectLookaya->attach($skillHtml);
     }
 
 }

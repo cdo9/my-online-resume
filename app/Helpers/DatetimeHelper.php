@@ -15,7 +15,7 @@
         $diff = $starDate->diff($endDate);
         $readableDiff = "";
         if($diff->y) $readableDiff .= "{$diff->y} ans";
-        if($diff->y && $diff->m) $readableDiff .= " ";
+        if($diff->y && $diff->m) $readableDiff .= " et ";
         if($diff->m) $readableDiff .= "{$diff->m} mois";
         return $readableDiff;
     }

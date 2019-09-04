@@ -2,7 +2,8 @@
 
 return [
     'page-title' => 'Curriculum vitae',
+    'me' => 'Me',
     'skills' => 'Compétences',
-    'used-skills' => 'Compétences utilisées',
+    'services' => 'Prestations',
     'projects' => 'Projets',
 ];
