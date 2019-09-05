@@ -3,7 +3,7 @@
     @foreach($projects as $project)
         <li class="project" style="border-left-color: {{ $project->color }};">
             <h3 class="project__title">{{ $project->name }}</h3>
-            <div class="project__position">{{ $project->position }} @if($project->freelance) - en freelance @endif</div>
+            <div class="project__position">{{ $project->position }} @if($project->freelance) - @lang('cv.has_freelance') @endif</div>
 
             <div class="project__time">{{ $project->area }} - {{ readableStartAndEndDates($project->started_at, $project->ended_at) }}</div>
 

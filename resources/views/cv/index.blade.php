@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <div class="content">
-        <h1 class="title">@lang('cv.page-title')</h1>
+        <h1 class="title">@lang('cv.page_title')</h1>
         <div class="cv">
             <div class="cv__column">
                 <div class="cv__item">

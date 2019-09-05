@@ -1,9 +1,11 @@
 <?php
 
 return [
-    'page-title' => 'Curriculum vitae',
+    'page_title' => 'Curriculum vitae',
+    'me' => 'Me',
     'skills' => 'Skills',
-    'used-skills' => 'Used skills',
+    'services' => 'Services',
     'projects' => 'Projects',
+    'has_freelance' => 'has freelance',
 
 ];
