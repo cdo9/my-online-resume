@@ -1,6 +1,6 @@
 body.night {
-  background-color: $black;
-  color: $white;
+  background-color: $gray;
+  color: $lightgray;
   /* _navbar
   ===========================================*/
   .navbar {
@@ -9,13 +9,25 @@ body.night {
   }
   .navbar__item__logo {
     background-color: $gray;
-    color: $black;
+    color: $lightgray;
+  }
+  .navbar__item__buttons__button {
+    border-color: $gray;
+  }
+  .navbar__item__flags__flag {
+    border-color: $gray;
   }
   /* _cv
  ===========================================*/
+  .cv__title {
+    border-color: $black;
+  }
+  .cv__item {
+    //background-color: $gray;
+  }
   .skill {
-    background-color: $black;
-    color: $white;
-    //border-color: $gray !important;
+    background-color: $gray;
+    color: $lightgray;
+    //border-color: $black !important;
   }
 }

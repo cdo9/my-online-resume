@@ -8,8 +8,8 @@
     <title>My Smart CV</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ mix("css/app.css") }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset("css/fontawesome.min.css") }}">
+    <link rel="stylesheet" type="text/css" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/fontawesome.min.css') }}">
 
     <!-- Scripts -->
     @stack('before-head-scripts')

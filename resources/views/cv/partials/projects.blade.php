@@ -1,4 +1,4 @@
-<h2 class="cv__title"><i class="fad fa-fw fa-tasks"></i> @lang('cv.projects')</h2>
+<h2 class="cv__title"><i class="fad fa-fw fa-chart-network"></i> @lang('cv.projects')</h2>
 <ul class="projects">
     @foreach($projects as $project)
         <li class="project" style="border-left-color: {{ $project->color }};">
@@ -15,9 +15,12 @@
                     @endforeach
                 </ul>
             </div>
-            <div class="project__description">
-                {!! $project->translated_description !!}
-            </div>
+            @if($project->translated_description)
+                <div class="project__description js-open-close-container">
+                    <div class="project__description__open-close js-open-close-button" data-open-name="@lang('cv.open_description')" data-close-name="@lang('cv.close_description')">@lang('cv.open_description') <i class='fad fa-fw fa-chevron-right'></i></div>
+                    <div class="project__description__text js-open-close-element hide">{!! $project->translated_description !!}</div>
+                </div>
+            @endif
         </li>
     @endforeach
 </ul>

@@ -1,8 +1,8 @@
 .navbar {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
   box-sizing: border-box;
-  background-color: $blue;
+  background-color: $lightgray;
   //border-bottom: 2px solid $white;
   @include media('mobile-large') {
     text-align: center;
@@ -22,8 +22,8 @@
   font-family: 'Pacifico', cursive;
   @include font-size(20px);
   font-weight: bold;
-  background-color: $white;
-  color: $blue;
+  background-color: $gray;
+  color: $lightgray;
   padding: 5px 8px;
   text-align: center;
   @include border-radius(5px);
@@ -54,7 +54,7 @@
   text-decoration: none;
   opacity: 0.5;
   filter: grayscale(100%);
-  border-right: 2px solid $black;
+  border-right: 2px solid $lightgray;
   img {
     height: 30px;
     width: auto;
@@ -88,7 +88,7 @@
   padding: 5px 5px;
   background-color: $gray;
   color: $white;
-  border-right: 2px solid $black;
+  border-right: 2px solid $lightgray;
   &:hover {
     background-color: $white;
     color: $gray;
