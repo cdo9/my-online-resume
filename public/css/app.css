@@ -513,6 +513,7 @@ body {
   display: inline-block;
   padding: 0 0 5px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .project__position {

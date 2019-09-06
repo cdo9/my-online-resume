@@ -34,11 +34,11 @@
 /* OPEN CLOSE */
 $('.js-open-close-button').click(function () {
     var element = $(this).closest('.js-open-close-container').children('.js-open-close-element');
-    element.slideToggle(350, callbackOpenClose($(this), element));
+    element.slideToggle(500, callbackOpenClose($(this), element));
 });
 
 function callbackOpenClose(button, element) {
     var openButtonName = button.attr('data-open-name');
     var closeButtonName = button.attr('data-close-name');
-    element.is(":visible") ? button.html(openButtonName+" <i class='fad fa-fw fa-chevron-right'></i>") : button.html(closeButtonName+" <i class='fad fa-fw fa-chevron-up'></i>");
+    element.is(":visible") ? button.html("<i class='fad fa-long-arrow-alt-right'></i> "+openButtonName) : button.html("<i class='fad fa-long-arrow-alt-up'></i> "+closeButtonName);
 }

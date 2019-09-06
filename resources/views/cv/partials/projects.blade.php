@@ -17,7 +17,7 @@
             </div>
             @if($project->translated_description)
                 <div class="project__description js-open-close-container">
-                    <div class="project__description__open-close js-open-close-button" data-open-name="@lang('cv.open_description')" data-close-name="@lang('cv.close_description')">@lang('cv.open_description') <i class='fad fa-fw fa-chevron-right'></i></div>
+                    <div class="project__description__open-close js-open-close-button" data-open-name="@lang('cv.open_description')" data-close-name="@lang('cv.close_description')"><i class='fad fa-long-arrow-alt-right'></i> @lang('cv.open_description')</div>
                     <div class="project__description__text js-open-close-element hide">{!! $project->translated_description !!}</div>
                 </div>
             @endif
