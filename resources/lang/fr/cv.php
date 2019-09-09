@@ -6,7 +6,7 @@ return [
     'skills' => 'Compétences',
     'services' => 'Prestations',
     'projects' => 'Projets',
-    'school' => 'Études',
+    'trainings' => 'Études',
     'interests' => 'Intérêts',
     'has_freelance' => 'en freelance',
     'open_description' => 'Voir la description',

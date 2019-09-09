@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use App\Models\SeekedJobs;
+
+use App\Models\SeekedJob;
 
 class CreateSeekedJobsTable extends Migration
 {
@@ -39,21 +40,21 @@ class CreateSeekedJobsTable extends Migration
     }
 
     public function seed() {
-        SeekedJobs::create([
+        SeekedJob::create([
             'name_fr' => 'Chef de projet Web',
             'name_pt' => '',
             'name_en' => '',
             'name_es' => '',
 
         ]);
-        SeekedJobs::create([
+        SeekedJob::create([
             'name_fr' => 'Développeur Web Fullstack Senior',
             'name_pt' => '',
             'name_en' => '',
             'name_es' => '',
 
         ]);
-        SeekedJobs::create([
+        SeekedJob::create([
             'name_fr' => 'CTO',
             'name_pt' => '',
             'name_en' => '',

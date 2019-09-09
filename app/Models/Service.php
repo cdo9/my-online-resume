@@ -5,7 +5,7 @@ namespace App\Models;
 use App\Traits\IsTranslatable;
 use Illuminate\Database\Eloquent\Model;
 
-class Services extends Model {
+class Service extends Model {
 
     use IsTranslatable;
 

@@ -71,12 +71,16 @@
   padding: 3px 5px;
   background-color: $white;
   color: $black;
-  @include font-size(13px);
+  @include font-size(14px);
   font-weight: bold;
-  line-height: 14px;
+  line-height: 16px;
   vertical-align: middle;
   border-width: 2px;
   border-style: solid;
+  i {
+    @include font-size(15px);
+    padding-right: 5px;
+  }
 }
 
 .skill--main {

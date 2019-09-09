@@ -14,7 +14,7 @@
                     @include('cv.partials.services')
                 </div>
                 <div class="cv__item">
-                    @include('cv.partials.school')
+                    @include('cv.partials.trainings')
                 </div>
                 <div class="cv__item">
                     @include('cv.partials.interests')

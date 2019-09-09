@@ -466,13 +466,19 @@ body {
   padding: 3px 5px;
   background-color: #ecf0f1;
   color: #131418;
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
-  line-height: 14px;
+  line-height: 16px;
   vertical-align: middle;
   border-width: 2px;
   border-style: solid;
+}
+
+.skill i {
+  font-size: 16px;
+  font-size: 1rem;
+  padding-right: 5px;
 }
 
 .skill-title {
