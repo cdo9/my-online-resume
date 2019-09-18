@@ -43,13 +43,40 @@
 }
 
 .cv__title {
-  @include font-size(24px);
+  @include font-size(20px);
   //padding: 10px;
   padding: 10px 0 5px;
   font-weight: bold;
   //background-color: $white;
   margin-bottom: 10px;
   //border-bottom: 2px solid $gray;
+  i {
+    @include font-size(24px);
+  }
+}
+
+/* _me
+===========================================*/
+.cv__me {
+
+}
+
+.cv__me__item {
+  padding: 3px 5px;
+  //background-color: $lightmetal;
+  //color: $metal;
+  @include font-size(14px);
+}
+.cv__me__item__title {
+  @include font-size(16px);
+  font-weight: bold;
+}
+.cv__me__item__label {
+  font-weight: bold;
+}
+
+.cv__me__item__value {
+  font-style: italic;
 }
 
 /* _skills
@@ -61,7 +88,6 @@
 }
 .skills__category {
   display: inline-block;
-  //background-color: red;
   padding: 5px;
   float: left;
 }
@@ -69,14 +95,15 @@
 .skill {
   display: inline-block;
   padding: 3px 5px;
-  background-color: $white;
-  color: $black;
+  background-color: $lightmetal;
+  color: $metal;
   @include font-size(14px);
-  font-weight: bold;
-  line-height: 16px;
   vertical-align: middle;
-  border-width: 2px;
-  border-style: solid;
+  border-width: 1px;
+  border-style: dashed;
+  margin: 3px;
+  @include border-radius(3px);
+  font-weight: 500;
   i {
     @include font-size(15px);
     padding-right: 5px;

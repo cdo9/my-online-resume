@@ -5,18 +5,18 @@ namespace App\Models;
 use App\Traits\IsTranslatable;
 use Illuminate\Database\Eloquent\Model;
 
-class SeekedJob extends Model {
+class WhereSeekedJob extends Model {
 
     use IsTranslatable;
 
     protected $fillable = ['name_fr', 'name_pt', 'name_en', 'name_es',];
 
     public static function getFormattedForHtml() {
-        $seekedJobs = self::all();
+        $whereSeekedJobs = self::all();
         $html = "";
-        foreach ($seekedJobs as $seekedJob) {
-            $html .= "{$seekedJob->translated_name}";
-            if($seekedJobs->last() === $seekedJob) {
+        foreach ($whereSeekedJobs as $whereSeekedJob) {
+            $html .= "{$whereSeekedJob->translated_name}";
+            if($whereSeekedJobs->last() === $whereSeekedJob) {
                 $html .= ".";
             } else {
                 $html .= ", ";
@@ -24,4 +24,5 @@ class SeekedJob extends Model {
         }
         return $html;
     }
+
 }

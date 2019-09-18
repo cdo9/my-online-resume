@@ -373,7 +373,7 @@ a {
 html,
 body {
   background-color: #ecf0f1;
-  color: #2d3436;
+  color: #131418;
   font-family: "DM Sans", sans-serif;
   font-weight: 200;
   font-size: 16px;
@@ -440,11 +440,39 @@ body {
 }
 
 .cv__title {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   padding: 10px 0 5px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.cv__title i {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+/* _me
+===========================================*/
+
+.cv__me__item {
+  padding: 3px 5px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+.cv__me__item__title {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cv__me__item__label {
+  font-weight: bold;
+}
+
+.cv__me__item__value {
+  font-style: italic;
 }
 
 /* _skills
@@ -464,20 +492,21 @@ body {
 .skill {
   display: inline-block;
   padding: 3px 5px;
-  background-color: #ecf0f1;
-  color: #131418;
+  background-color: rgba(113, 128, 147, 0.3);
+  color: #718093;
   font-size: 14px;
   font-size: 0.875rem;
-  font-weight: bold;
-  line-height: 16px;
   vertical-align: middle;
-  border-width: 2px;
-  border-style: solid;
+  border-width: 1px;
+  border-style: dashed;
+  margin: 3px;
+  border-radius: 3px;
+  font-weight: 500;
 }
 
 .skill i {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
   padding-right: 5px;
 }
 
@@ -664,7 +693,7 @@ body {
 
 .navbar {
   width: 100%;
-  padding: 10px;
+  padding: 5px 10px;
   box-sizing: border-box;
   background-color: #d2d7d3;
 }
@@ -689,8 +718,7 @@ body {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: #2d3436;
-  color: #d2d7d3;
+  color: #2d3436;
   padding: 5px 8px;
   text-align: center;
   border-radius: 5px;
@@ -750,14 +778,14 @@ body {
   font-size: 20px;
   font-size: 1.25rem;
   padding: 5px 5px;
-  background-color: #2d3436;
+  background-color: #131418;
   color: #ecf0f1;
   border-right: 2px solid #d2d7d3;
 }
 
 .navbar__item__buttons__button:hover {
   background-color: #ecf0f1;
-  color: #2d3436;
+  color: #131418;
   transition: 0.3s ease-in-out;
 }
 
@@ -774,11 +802,11 @@ body {
 
 .navbar__item__buttons__button--selected {
   background-color: #ecf0f1;
-  color: #2d3436;
+  color: #131418;
 }
 
 body.night {
-  background-color: #2d3436;
+  background-color: #131418;
   color: #d2d7d3;
   /* _navbar
   ===========================================*/
@@ -787,16 +815,26 @@ body.night {
 }
 
 body.night .navbar {
-  background-color: #131418;
+  background-color: #2d3436;
 }
 
 body.night .navbar__item__logo {
-  background-color: #2d3436;
   color: #d2d7d3;
 }
 
 body.night .navbar__item__buttons__button {
   border-color: #2d3436;
+  background-color: #131418;
+}
+
+body.night .navbar__item__buttons__button:hover {
+  background-color: #ecf0f1;
+  color: #131418;
+}
+
+body.night .navbar__item__buttons__button--selected {
+  background-color: #ecf0f1;
+  color: #131418;
 }
 
 body.night .navbar__item__flags__flag {
@@ -808,7 +846,6 @@ body.night .cv__title {
 }
 
 body.night .skill {
-  background-color: #2d3436;
-  color: #d2d7d3;
+  background-color: #131418 !important;
 }
 

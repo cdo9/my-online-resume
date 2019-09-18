@@ -41,23 +41,23 @@ class CreateSeekedJobsTable extends Migration
 
     public function seed() {
         SeekedJob::create([
-            'name_fr' => 'Chef de projet Web',
-            'name_pt' => '',
-            'name_en' => '',
+            'name_fr' => 'Chef de projet Web/Mobile',
+            'name_pt' => 'Web/Mobile Project Manager',
+            'name_en' => 'Web/Mobile Project Manager',
             'name_es' => '',
 
         ]);
         SeekedJob::create([
             'name_fr' => 'Développeur Web Fullstack Senior',
-            'name_pt' => '',
-            'name_en' => '',
+            'name_pt' => 'Senior Fullstack Web Developer',
+            'name_en' => 'Senior Fullstack Web Developer',
             'name_es' => '',
 
         ]);
         SeekedJob::create([
             'name_fr' => 'CTO',
-            'name_pt' => '',
-            'name_en' => '',
+            'name_pt' => 'CTO',
+            'name_en' => 'CTO',
             'name_es' => '',
 
         ]);

@@ -11,7 +11,7 @@
                 <ul class="skills">
                     <!--<li class="skill-title">@lang('cv.used-skills') :</li>-->
                     @foreach($project->skills as $skill)
-                        <li class="skill" style="border-color: {{ $project->color }};">{{ $skill->name }}</li>
+                        <li class="skill" style="background-color: {{ $project->color_light }}; color: {{ $project->color }};">{{ $skill->name }}</li>
                     @endforeach
                 </ul>
             </div>

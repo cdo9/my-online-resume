@@ -27,6 +27,7 @@ class CreateProjectsTable extends Migration
             $table->string('area')->nullable();
             $table->string('position')->nullable();
             $table->string('color')->nullable();
+            $table->string('color_light')->nullable();
             $table->boolean('freelance')->default(false);
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
@@ -58,6 +59,7 @@ class CreateProjectsTable extends Migration
             'position' => 'Senior Fullstack Dev',
             'area' => 'Neuilly-sur-Seine, France',
             'color' => '#1e3799',
+            'color_light' => hex2rgba('#1e3799', 0.2),
             'freelance' => false,
             'started_at' => \Carbon\Carbon::create(2017, 9, 1),
             'ended_at' => null,
@@ -72,6 +74,7 @@ class CreateProjectsTable extends Migration
             'position' => 'Fullstack Dev',
             'area' => 'Paris, France',
             'color' => '#1dabe3',
+            'color_light' => hex2rgba('#1dabe3', 0.2),
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2015, 6, 1), // todo trouver vrai date
             'ended_at' => \Carbon\Carbon::create(2018, 12, 31),
@@ -85,7 +88,8 @@ class CreateProjectsTable extends Migration
             'name' => 'bdBuzz (Nenuphar Development)',
             'position' => 'Front Dev',
             'area' => 'Neuilly-sur-Seine, France',
-            'color' => '#d3d137',
+            'color' => '#e1b12c',
+            'color_light' => hex2rgba('#e1b12c', 0.2),
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2014, 4, 1),
             'ended_at' => \Carbon\Carbon::create(2015, 7, 1), // todo trouver vrai date
@@ -100,6 +104,7 @@ class CreateProjectsTable extends Migration
             'position' => 'Fullstack Dev',
             'area' => 'Paris, France',
             'color' => '#045499',
+            'color_light' => hex2rgba('#045499', 0.2),
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2015, 6, 1), // todo trouver vrai date
             'ended_at' => \Carbon\Carbon::create(2018, 12, 31), // todo trouver vrai date
@@ -114,6 +119,7 @@ class CreateProjectsTable extends Migration
             'position' => 'Fullstack Dev',
             'area' => 'Neuilly-sur-Seine, France',
             'color' => '#146ccb',
+            'color_light' => hex2rgba('#146ccb', 0.2),
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2015, 6, 1), // todo trouver vrai date
             'ended_at' => \Carbon\Carbon::create(2018, 12, 31), // todo trouver vrai date

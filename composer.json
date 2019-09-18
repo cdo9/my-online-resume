@@ -42,6 +42,7 @@
     },
     "autoload-dev": {
         "files": [
+            "app/Helpers/ColorHelper.php",
             "app/Helpers/DatetimeHelper.php"
         ],
         "psr-4": {

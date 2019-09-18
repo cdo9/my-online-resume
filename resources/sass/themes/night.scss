@@ -1,19 +1,29 @@
 body.night {
-  background-color: $gray;
+  background-color: $black;
   color: $lightgray;
   /* _navbar
   ===========================================*/
   .navbar {
-    background-color: $black;
+    background-color: $gray;
     //border-bottom-color: $gray;
   }
   .navbar__item__logo {
-    background-color: $gray;
+    //background-color: $gray;
     color: $lightgray;
   }
   .navbar__item__buttons__button {
     border-color: $gray;
+    background-color: $black;
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
   }
+  .navbar__item__buttons__button--selected {
+    background-color: $white;
+    color: $black;
+  }
+
   .navbar__item__flags__flag {
     border-color: $gray;
   }
@@ -26,8 +36,8 @@ body.night {
     //background-color: $gray;
   }
   .skill {
-    background-color: $gray;
-    color: $lightgray;
+    background-color: $black !important;
+    //color: darken($lightgray, 20%) !important;
     //border-color: $black !important;
   }
 }
