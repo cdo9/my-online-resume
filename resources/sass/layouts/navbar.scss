@@ -2,11 +2,16 @@
   width: 100%;
   padding: 5px 10px;
   box-sizing: border-box;
-  background-color: $lightgray;
+  background-color: $lightmetal;
   //border-bottom: 2px solid $white;
+  /*display: none;
+  @include media('screen-small') {
+    display: block;
+  }*/
   @include media('mobile-large') {
     text-align: center;
   }
+
 }
 
 .navbar__item {

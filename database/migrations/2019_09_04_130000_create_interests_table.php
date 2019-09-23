@@ -44,8 +44,8 @@ class CreateInterestsTable extends Migration
         Interest::create([
             'icon' => "fad fa-fw fa-laptop",
             'name_fr' => "Informatique",
-            'name_pt' => "",
-            'name_en' => "",
+            'name_pt' => "Informática",
+            'name_en' => "Computer science",
             'name_es' => "",
             'color' => "",
         ]);
@@ -53,16 +53,24 @@ class CreateInterestsTable extends Migration
         Interest::create([
             'icon' => "fad fa-fw fa-cauldron",
             'name_fr' => "Cuisine",
-            'name_pt' => "",
-            'name_en' => "",
+            'name_pt' => "Cozinhar",
+            'name_en' => "Cooking",
             'name_es' => "",
             'color' => "",
         ]);
         Interest::create([
             'icon' => "fad fa-fw fa-skating",
             'name_fr' => "Roller",
-            'name_pt' => "",
-            'name_en' => "",
+            'name_pt' => "Roller",
+            'name_en' => "Roller",
+            'name_es' => "",
+            'color' => "",
+        ]);
+        Interest::create([
+            'icon' => "fad fa-fw fa-tree-alt",
+            'name_fr' => "Nature",
+            'name_pt' => "Natureza",
+            'name_en' => "Nature",
             'name_es' => "",
             'color' => "",
         ]);

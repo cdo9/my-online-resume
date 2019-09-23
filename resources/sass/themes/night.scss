@@ -4,7 +4,7 @@ body.night {
   /* _navbar
   ===========================================*/
   .navbar {
-    background-color: $gray;
+    background-color: $lightmetal;
     //border-bottom-color: $gray;
   }
   .navbar__item__logo {
@@ -13,14 +13,14 @@ body.night {
   }
   .navbar__item__buttons__button {
     border-color: $gray;
-    background-color: $black;
+    background-color: $gray;
     &:hover {
-      background-color: $white;
+      background-color: $lightgray;
       color: $black;
     }
   }
   .navbar__item__buttons__button--selected {
-    background-color: $white;
+    background-color: $lightgray;
     color: $black;
   }
 

@@ -12,6 +12,8 @@
 /* _base
 ===========================================*/
 .cv {
+  max-width: 1280px;
+  margin: 0 auto;
   //padding: 10px 0;
 }
 
@@ -21,11 +23,27 @@
   box-sizing: border-box;
   vertical-align: top;
   &:first-child {
-    padding-right: 5px;
+    padding-right: 10px;
   }
   &:last-child {
-    padding-left: 5px;
+    padding-left: 10px;
   }
+  @include media('screen-small') {
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+
+.cv__column--main {
+  width: 65%;
+  @include media('screen-small') {
+    width: 100%;
+    padding: 0 !important;
+  }
+}
+
+.cv__column--secondary {
+  width: 35%;
   @include media('screen-small') {
     width: 100%;
     padding: 0 !important;
@@ -36,47 +54,82 @@
   margin: 0 0 20px;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px;
-  //background-color: $white;
+  padding: 15px;
   @include border-radius(5px);
 
 }
 
+.cv__item--with-bg {
+  margin: 20px 0;
+  background-color: $lightmetal;
+}
+
 .cv__title {
   @include font-size(20px);
-  //padding: 10px;
-  padding: 10px 0 5px;
-  font-weight: bold;
-  //background-color: $white;
+  padding: 10px 0;
   margin-bottom: 10px;
-  //border-bottom: 2px solid $gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  @include border-radius(5px);
   i {
-    @include font-size(24px);
+    //@include font-size(24px);
   }
 }
 
 /* _me
 ===========================================*/
 .cv__me {
+  @include border-radius(5px);
 
 }
+.cv__me__text {
+  display: inline-block;
+  width: 80%;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.cv__me__memoji {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+}
+.cv__me__list {
 
-.cv__me__item {
-  padding: 3px 5px;
+}
+.cv__me__list__item {
+  padding: 3px 5px 5px;
   //background-color: $lightmetal;
   //color: $metal;
-  @include font-size(14px);
+  @include font-size(15px);
+  .cv__title {
+    margin-bottom: 0;
+    padding: 10px 0 5px;
+    border: none;
+    background-color: transparent;
+  }
 }
-.cv__me__item__title {
+.cv__me__list__item__title {
   @include font-size(16px);
   font-weight: bold;
 }
-.cv__me__item__label {
+.cv__me__list__item__label {
   font-weight: bold;
 }
 
-.cv__me__item__value {
+.cv__me__list__item__value {
   font-style: italic;
+  img {
+    height: 12px;
+    width: auto;
+    padding-right: 3px;
+  }
 }
 
 /* _skills
@@ -94,14 +147,14 @@
 
 .skill {
   display: inline-block;
-  padding: 3px 5px;
+  padding: 5px;
   background-color: $lightmetal;
   color: $metal;
-  @include font-size(14px);
+  @include font-size(15px);
   vertical-align: middle;
   border-width: 1px;
   border-style: dashed;
-  margin: 3px;
+  margin: 4px;
   @include border-radius(3px);
   font-weight: 500;
   i {
@@ -136,9 +189,16 @@
 }
 
 .project {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
   padding-left: 5px;
+  padding-right: 10px;
   margin-bottom: 15px;
   border-left: 3px solid transparent;
+}
+.project--50-50 {
+  width: 50%;
 }
 
 .project__title {
@@ -175,6 +235,22 @@
   font-style: italic;
 }
 
-.project_skills {
+.project__skills {
   padding: 5px 0;
+}
+
+.project__gallery {
+
+}
+.project__gallery__item {
+  display: inline-block;
+  width: 33.33%;
+  //background-color: red;
+  padding: 5px;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+    height: 50px;
+    border: 1px solid $lightgray;
+  }
 }

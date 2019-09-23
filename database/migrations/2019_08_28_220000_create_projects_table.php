@@ -78,7 +78,7 @@ class CreateProjectsTable extends Migration
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2015, 6, 1), // todo trouver vrai date
             'ended_at' => \Carbon\Carbon::create(2018, 12, 31),
-            'description_fr' => '',
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
@@ -93,7 +93,7 @@ class CreateProjectsTable extends Migration
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2014, 4, 1),
             'ended_at' => \Carbon\Carbon::create(2015, 7, 1), // todo trouver vrai date
-            'description_fr' => '',
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
@@ -108,7 +108,7 @@ class CreateProjectsTable extends Migration
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2015, 6, 1), // todo trouver vrai date
             'ended_at' => \Carbon\Carbon::create(2018, 12, 31), // todo trouver vrai date
-            'description_fr' => '',
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
@@ -123,7 +123,7 @@ class CreateProjectsTable extends Migration
             'freelance' => true,
             'started_at' => \Carbon\Carbon::create(2015, 6, 1), // todo trouver vrai date
             'ended_at' => \Carbon\Carbon::create(2018, 12, 31), // todo trouver vrai date
-            'description_fr' => '',
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',

@@ -65,7 +65,7 @@ class CreateSkillsTable extends Migration
         $skillSql = Skill::where('slug', 'sql')->first();
         Skill::create(['slug' => 'mysql', 'name' => 'MySQL', 'color' => '', 'parent_id' => $skillSql->id]);
 
-        Skill::create(['slug' => 'js', 'name' => 'JavaScript', 'color' => '#e1b12c', 'color_light' => hex2rgba('#e1b12c', 0.2), 'parent_id' => null]);
+        Skill::create(['slug' => 'js', 'name' => 'JavaScript', 'color' => '#d1a11e', 'color_light' => hex2rgba('#e1b12c', 0.2), 'parent_id' => null]);
         $skillJs = Skill::where('slug', 'js')->first();
         Skill::create(['slug' => 'vue', 'name' => 'Vue.js', 'color' => '', 'parent_id' => $skillJs->id]);
         Skill::create(['slug' => 'react', 'name' => 'React.js', 'color' => '', 'parent_id' => $skillJs->id]);
