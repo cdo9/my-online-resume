@@ -3,7 +3,7 @@
     <div class="content">
         <div class="cv">
             <div class="cv__row">
-                <div class="cv__item cv__item--with-bg" style="margin-bottom: 0;">
+                <div class="cv__item cv__item--with-bg">
                     @include('cv.partials.me')
                 </div>
                 <div class="cv__column cv__column--main">

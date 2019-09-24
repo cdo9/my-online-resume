@@ -14,7 +14,7 @@
 .cv {
   max-width: 1280px;
   margin: 0 auto;
-  //padding: 10px 0;
+  padding: 10px;
 }
 
 .cv__column {
@@ -52,15 +52,15 @@
 
 .cv__item {
   margin: 0 0 20px;
-  width: 100%;
   box-sizing: border-box;
   padding: 15px;
   @include border-radius(5px);
-
+  @include media('screen-small') {
+    background-color: $lightmetal;
+  }
 }
 
 .cv__item--with-bg {
-  margin: 20px 0;
   background-color: $lightmetal;
 }
 
@@ -71,23 +71,16 @@
   font-weight: bold;
   text-transform: uppercase;
   @include border-radius(5px);
-  i {
-    //@include font-size(24px);
-  }
 }
 
 /* _me
 ===========================================*/
 .cv__me {
   @include border-radius(5px);
+  position: relative;
 
 }
-.cv__me__text {
-  display: inline-block;
-  width: 80%;
-  box-sizing: border-box;
-  vertical-align: middle;
-}
+
 .cv__me__memoji {
   display: inline-block;
   width: 20%;
@@ -99,14 +92,40 @@
     max-width: 200px;
     height: auto;
   }
+  @include media('tablet-large') {
+    width: 100%;
+    display: block;
+  }
 }
-.cv__me__list {
 
+.cv__me__settings {
+  display: inline-block;
+  width: 10%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: right;
+  @include media('screen-small') {
+    display: none;
+  }
 }
-.cv__me__list__item {
+
+.cv__me__text {
+  display: inline-block;
+  width: 70%;
+  box-sizing: border-box;
+  vertical-align: middle;
+  @include media('screen-small') {
+    width: 80%;
+  }
+  @include media('tablet-large') {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.cv__me__text__item {
   padding: 3px 5px 5px;
-  //background-color: $lightmetal;
-  //color: $metal;
   @include font-size(15px);
   .cv__title {
     margin-bottom: 0;
@@ -115,15 +134,17 @@
     background-color: transparent;
   }
 }
-.cv__me__list__item__title {
+
+.cv__me__text__item__title {
   @include font-size(16px);
   font-weight: bold;
 }
-.cv__me__list__item__label {
+
+.cv__me__text__item__label {
   font-weight: bold;
 }
 
-.cv__me__list__item__value {
+.cv__me__text__item__value {
   font-style: italic;
   img {
     height: 12px;
@@ -134,53 +155,7 @@
 
 /* _skills
 ===========================================*/
-.skills {
-  display: flex;
-  flex-wrap: wrap;
 
-}
-.skills__category {
-  display: inline-block;
-  padding: 5px;
-  float: left;
-}
-
-.skill {
-  display: inline-block;
-  padding: 5px;
-  background-color: $lightmetal;
-  color: $metal;
-  @include font-size(15px);
-  vertical-align: middle;
-  border-width: 1px;
-  border-style: dashed;
-  margin: 4px;
-  @include border-radius(3px);
-  font-weight: 500;
-  i {
-    @include font-size(15px);
-    padding-right: 5px;
-  }
-}
-
-.skill--main {
-
-}
-
-.skill--child {
-
-}
-
-.skill-title {
-  display: inline-block;
-  padding: 3px 5px 3px 0;
-  @include font-size(13px);
-  font-weight: bold;
-  line-height: 14px;
-  vertical-align: middle;
-  border: 5px solid transparent;
-  border-left-width: 0px;
-}
 
 /* _projects
 ===========================================*/

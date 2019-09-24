@@ -6,11 +6,11 @@
 
             <div class="project__time">{{ $project->area }} - {{ readableStartAndEndDates($project->started_at, $project->ended_at) }}</div>
 
-            <div class="project__skills">
-                <ul class="skills">
+            <div class="project__tags">
+                <ul class="tags">
                     <!--<li class="skill-title">@lang('cv.used-skills') :</li>-->
                     @foreach($project->skills as $skill)
-                        <li class="skill" style="background-color: {{ $project->color_light }}; color: {{ $project->color }};">{{ $skill->name }}</li>
+                        <li class="tag" style="background-color: {{ $project->color_light }}; color: {{ $project->color }};">{{ $skill->name }}</li>
                     @endforeach
                 </ul>
             </div>

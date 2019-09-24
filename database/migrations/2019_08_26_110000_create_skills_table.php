@@ -77,5 +77,8 @@ class CreateSkillsTable extends Migration
         Skill::create(['slug' => 'ui-ux', 'name' => 'UI/UX', 'color' => '', 'parent_id' => $skillDesign->id]);
 
         Skill::create(['slug' => 'seo', 'name' => 'SEO', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+
+        Skill::create(['slug' => 'git', 'name' => 'GIT', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+
     }
 }
