@@ -512,13 +512,12 @@ body {
 
 .tags {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
-.tags__category {
-  display: inline-block;
-  padding: 5px;
-  float: left;
+.tags--flex .tag {
+  flex: 1 auto;
+  text-align: center;
 }
 
 .tag {

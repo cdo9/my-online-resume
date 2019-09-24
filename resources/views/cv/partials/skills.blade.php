@@ -1,5 +1,5 @@
 <h2 class="cv__title"><i class="fad fa-fw fa-tools"></i> @lang('cv.skills')</h2>
-<ul class="tags">
+<ul class="tags tags--flex">
     @foreach($skills as $skill)
         <li class="tag tag--main" style="background-color: {{ $skill->color_light }}; color: {{ $skill->color }};">{{ $skill->name }}</li>
         @if($skill->childs)
