@@ -45,6 +45,14 @@ class CreateProjectSkillTable extends Migration
         $skillYii = Skill::where('slug', 'yii')->first();
         $skillZend = Skill::where('slug', 'zend')->first();
         $skillHtml = Skill::where('slug', 'html')->first();
+        $skillSass = Skill::where('slug', 'sass')->first();
+        $skillResponsive = Skill::where('slug', 'responsive')->first();
+        $skillSql = Skill::where('slug', 'sql')->first();
+        $skillDesign = Skill::where('slug', 'design')->first();
+        $skillUiUx = Skill::where('slug', 'ui-ux')->first();
+        $skillSeo = Skill::where('slug', 'seo')->first();
+        $skillJquery = Skill::where('slug', 'jquery')->first();
+        //$ = Skill::where('slug', '')->first();
 
         // Projects
         $projectRemplafrance = Project::where('slug', 'remplafrance')->first()->skills();
@@ -56,22 +64,43 @@ class CreateProjectSkillTable extends Migration
         // Attach to project Remplafrance
         $projectRemplafrance->attach($skillLaravel);
         $projectRemplafrance->attach($skillHtml);
+        $projectRemplafrance->attach($skillSass);
+        $projectRemplafrance->attach($skillResponsive);
+        $projectRemplafrance->attach($skillSql);
+        $projectRemplafrance->attach($skillDesign);
+        $projectRemplafrance->attach($skillUiUx);
+        $projectRemplafrance->attach($skillSeo);
+
+
+
 
         // Attach to project Victor & Charles
         $projectVictorCharles->attach($skillLaravel);
         $projectVictorCharles->attach($skillHtml);
+        $projectVictorCharles->attach($skillSass);
+        $projectVictorCharles->attach($skillJquery);
+
+
 
         // Attach to project bdBuzz
         $projectBdbuzz->attach($skillYii);
         $projectBdbuzz->attach($skillHtml);
+        $projectBdbuzz->attach($skillSass);
+        $projectBdbuzz->attach($skillJquery);
+
 
         // Attach to project NolimBD
         $projectNolimBd->attach($skillYii);
         $projectNolimBd->attach($skillHtml);
+        $projectNolimBd->attach($skillSass);
+        $projectNolimBd->attach($skillJquery);
 
         // Attach to project Lookaya
         $projectLookaya->attach($skillZend);
         $projectLookaya->attach($skillHtml);
+        $projectLookaya->attach($skillSass);
+        $projectLookaya->attach($skillJquery);
+
     }
 
 }

@@ -25,7 +25,10 @@ class CreateProjectsTable extends Migration
             $table->text('description_en')->nullable();
             $table->text('description_es')->nullable();
             $table->string('area')->nullable();
-            $table->string('position')->nullable();
+            $table->string('position_fr')->nullable();
+            $table->string('position_pt')->nullable();
+            $table->string('position_en')->nullable();
+            $table->string('position_es')->nullable();
             $table->string('color')->nullable();
             $table->string('color_light')->nullable();
             $table->boolean('freelance')->default(false);
@@ -56,7 +59,10 @@ class CreateProjectsTable extends Migration
         Project::create([
             'slug' => 'remplafrance',
             'name' => 'RemplaFrance',
-            'position' => 'Senior Fullstack Dev',
+            'position_fr' => 'Développeur Web Fullstack Senior',
+            'position_pt' => 'Senior Fullstack Dev',
+            'position_en' => 'Senior Fullstack Dev',
+            'position_es' => 'Senior Fullstack Dev',
             'area' => 'Neuilly-sur-Seine, France',
             'color' => '#1e3799',
             'color_light' => hex2rgba('#1e3799', 0.2),
@@ -68,10 +74,14 @@ class CreateProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
         ]);
+
         Project::create([
             'slug' => 'victor-charles',
             'name' => 'Victor & Charles',
-            'position' => 'Fullstack Dev',
+            'position_fr' => 'Développeur Web Fullstack',
+            'position_pt' => 'Fullstack Dev',
+            'position_en' => 'Fullstack Dev',
+            'position_es' => 'Fullstack Dev',
             'area' => 'Paris, France',
             'color' => '#1dabe3',
             'color_light' => hex2rgba('#1dabe3', 0.2),
@@ -83,10 +93,14 @@ class CreateProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
         ]);
+
         Project::create([
             'slug' => 'bdbuzz',
             'name' => 'bdBuzz (Nenuphar Development)',
-            'position' => 'Front Dev',
+            'position_fr' => 'Développeur Web Front',
+            'position_pt' => 'Front Dev',
+            'position_en' => 'Front Dev',
+            'position_es' => '',
             'area' => 'Neuilly-sur-Seine, France',
             'color' => '#e1b12c',
             'color_light' => hex2rgba('#e1b12c', 0.2),
@@ -98,10 +112,14 @@ class CreateProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
         ]);
+
         Project::create([
             'slug' => 'nolim-bd',
             'name' => 'NolimBD (Carrefour)',
-            'position' => 'Fullstack Dev',
+            'position_fr' => 'Développeur Web Fullstack',
+            'position_pt' => 'Fullstack Dev',
+            'position_en' => 'Fullstack Dev',
+            'position_es' => 'Fullstack Dev',
             'area' => 'Paris, France',
             'color' => '#045499',
             'color_light' => hex2rgba('#045499', 0.2),
@@ -113,10 +131,14 @@ class CreateProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
         ]);
+
         Project::create([
             'slug' => 'lookaya',
             'name' => 'Lookaya',
-            'position' => 'Fullstack Dev',
+            'position_fr' => 'Développeur Web Fullstack',
+            'position_pt' => 'Fullstack Dev',
+            'position_en' => 'Fullstack Dev',
+            'position_es' => 'Fullstack Dev',
             'area' => 'Neuilly-sur-Seine, France',
             'color' => '#146ccb',
             'color_light' => hex2rgba('#146ccb', 0.2),
@@ -128,7 +150,6 @@ class CreateProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
         ]);
-
 
     }
 }

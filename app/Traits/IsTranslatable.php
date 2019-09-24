@@ -18,6 +18,9 @@ trait IsTranslatable
     public function getTranslatedDescriptionAttribute() {
         return $this->getAttributeWithLocale('description');
     }
+    public function getTranslatedPositionAttribute() {
+        return $this->getAttributeWithLocale('position');
+    }
 
     /*
     |--------------------------------------------------------------------------

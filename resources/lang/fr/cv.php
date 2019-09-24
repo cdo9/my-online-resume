@@ -5,6 +5,7 @@ return [
     'me' => 'Moi',
     'skills' => 'Compétences',
     'services' => 'Prestations',
+    'personal_projects' => 'Projets personnels',
     'projects' => 'Projets',
     'trainings' => 'Études',
     'interests' => 'Intérêts',

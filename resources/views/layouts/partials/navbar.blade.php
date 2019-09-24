@@ -7,9 +7,9 @@
     <div class="navbar__item">
         <div class="buttons-theme">
             <a href="{{ route('switch-theme', ['theme' => 'light']) }}" class="button-theme button-theme--light @if(!session('theme') || session('theme') == "light")) button-theme--selected @endif">
-                <i class="fas fa-sun"></i>
+                <i class="fad fa-sun"></i>
             </a><a href="{{ route('switch-theme', ['theme' => 'night']) }}" class="button-theme button-theme--night @if(session('theme') == "night")) button-theme--selected @endif">
-                <i class="fas fa-moon"></i>
+                <i class="fad fa-moon"></i>
             </a>
         </div>
     </div>

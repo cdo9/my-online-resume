@@ -18,6 +18,9 @@
                         @include('cv.partials.services')
                     </div>
                     <div class="cv__item">
+                        @include('cv.partials.personal_projects')
+                    </div>
+                    <div class="cv__item">
                         @include('cv.partials.trainings')
                     </div>
                     <div class="cv__item">
