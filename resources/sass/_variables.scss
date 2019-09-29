@@ -43,7 +43,7 @@ $screen-large:	1280px;
 $white: #ecf0f1;
 $lightgray: #d2d7d3;
 $metal : #718093;
-$lightmetal: rgba(113,128,147,0.3);
+$lightmetal: rgba(113,128,147,0.1);
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -52,10 +52,11 @@ $red: #e3342f;
 $orange: #f6993f;
 $yellow: #ffed4a;
 $green: #38c172;
+//$hacker_green: #20C20E;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 $gray: #2d3436;
-$black: #131418;
+$black: #080808;
 
 $color-list: (
                 (white, $white),

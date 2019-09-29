@@ -30,10 +30,6 @@ class CreateTrainingsTable extends Migration
             $table->boolean('freelance')->default(false);
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
-            //$table->string('color')->nullable();
-            //$table->boolean('senior')->nullable(); // todo add to seed
-            //$table->unsignedBigInteger('parent_id')->nullable();
-            //$table->foreign('parent_id')->references('id')->on('skills');
             $table->timestamps();
         });
         $this->seed();
@@ -60,7 +56,7 @@ class CreateTrainingsTable extends Migration
             'color' => '#ce203d',
             'freelance' => false,
             'started_at' => \Carbon\Carbon::create(2012, 9, 1),
-            'ended_at' => \Carbon\Carbon::create(2014, 7, 1),
+            'ended_at' => \Carbon\Carbon::create(2014, 9, 1),
             'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'description_pt' => '',
             'description_en' => '',

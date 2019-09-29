@@ -64,6 +64,10 @@ class CreateSkillsTable extends Migration
         Skill::create(['slug' => 'sql', 'name' => 'SQL', 'color' => '#718093', 'color_light' => hex2rgba('#718093', 0.2), 'parent_id' => null]);
         $skillSql = Skill::where('slug', 'sql')->first();
         Skill::create(['slug' => 'mysql', 'name' => 'MySQL', 'color' => '', 'parent_id' => $skillSql->id]);
+        Skill::create(['slug' => 'data-optimization', 'name' => 'Data optimization', 'color' => '', 'parent_id' => $skillSql->id]);
+        Skill::create(['slug' => 'data-analysis', 'name' => 'Data analysis', 'color' => '', 'parent_id' => $skillSql->id]);
+
+
 
         Skill::create(['slug' => 'js', 'name' => 'JavaScript', 'color' => '#d1a11e', 'color_light' => hex2rgba('#e1b12c', 0.2), 'parent_id' => null]);
         $skillJs = Skill::where('slug', 'js')->first();
@@ -78,7 +82,12 @@ class CreateSkillsTable extends Migration
 
         Skill::create(['slug' => 'seo', 'name' => 'SEO', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
 
+        Skill::create(['slug' => 'deployment', 'name' => 'Deployment', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+        //Skill::create(['slug' => 'homestead', 'name' => 'Deployment', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+
         Skill::create(['slug' => 'git', 'name' => 'GIT', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+
+        Skill::create(['slug' => 'linux', 'name' => 'Linux', 'color' => '#20C20E', 'color_light' => hex2rgba('#20C20E', 0.2), 'parent_id' => null]);
 
     }
 }

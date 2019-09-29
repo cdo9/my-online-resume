@@ -1,43 +1,11 @@
 body.night {
   background-color: $black;
   color: $lightgray;
-  /* _navbar
-  ===========================================*/
-  .navbar {
-    background-color: $lightmetal;
-    //border-bottom-color: $gray;
+  .button {
+    background-color: $metal;
+    //color: $lightgray;
   }
-  .navbar__item__logo {
-    //background-color: $gray;
+  .link {
     color: $lightgray;
-  }
-  .navbar__item__buttons__button {
-    border-color: $gray;
-    background-color: $gray;
-    &:hover {
-      background-color: $lightgray;
-      color: $black;
-    }
-  }
-  .navbar__item__buttons__button--selected {
-    background-color: $lightgray;
-    color: $black;
-  }
-
-  .navbar__item__flags__flag {
-    border-color: $gray;
-  }
-  /* _cv
- ===========================================*/
-  .cv__title {
-    border-color: $black;
-  }
-  .cv__item {
-    //background-color: $gray;
-  }
-  .skill {
-    background-color: $black !important;
-    //color: darken($lightgray, 20%) !important;
-    //border-color: $black !important;
   }
 }

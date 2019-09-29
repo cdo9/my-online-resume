@@ -12,4 +12,6 @@ return [
     'has_freelance' => 'has freelance',
     'open_description' => 'Open',
     'close_description' => 'Close',
+    'open_view_more' => 'View more...',
+    'close_view_more' => 'Close',
 ];

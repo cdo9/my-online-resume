@@ -71,16 +71,12 @@ class CreateProjectSkillTable extends Migration
         $projectRemplafrance->attach($skillUiUx);
         $projectRemplafrance->attach($skillSeo);
 
-
-
-
         // Attach to project Victor & Charles
         $projectVictorCharles->attach($skillLaravel);
         $projectVictorCharles->attach($skillHtml);
         $projectVictorCharles->attach($skillSass);
         $projectVictorCharles->attach($skillJquery);
-
-
+        $projectVictorCharles->attach($skillSql);
 
         // Attach to project bdBuzz
         $projectBdbuzz->attach($skillYii);
@@ -88,18 +84,19 @@ class CreateProjectSkillTable extends Migration
         $projectBdbuzz->attach($skillSass);
         $projectBdbuzz->attach($skillJquery);
 
-
         // Attach to project NolimBD
         $projectNolimBd->attach($skillYii);
         $projectNolimBd->attach($skillHtml);
         $projectNolimBd->attach($skillSass);
         $projectNolimBd->attach($skillJquery);
+        $projectNolimBd->attach($skillSql);
 
         // Attach to project Lookaya
         $projectLookaya->attach($skillZend);
         $projectLookaya->attach($skillHtml);
         $projectLookaya->attach($skillSass);
         $projectLookaya->attach($skillJquery);
+        $projectLookaya->attach($skillSql);
 
     }
 

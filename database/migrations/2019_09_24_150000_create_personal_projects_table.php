@@ -26,6 +26,8 @@ class CreatePersonalProjectsTable extends Migration
             $table->text('description_es')->nullable();
             $table->string('color')->nullable();
             $table->string('color_light')->nullable();
+            $table->string('source_link', 500)->nullable();
+            $table->string('website_link', 500)->nullable();
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
             $table->timestamps();
@@ -46,7 +48,7 @@ class CreatePersonalProjectsTable extends Migration
 
     public function seed()
     {
-        PersonalProject::create([
+        /*PersonalProject::create([
             'slug' => 'live-statistics',
             'name' => 'Live Statistics',
             'color' => '#1e3799',
@@ -57,7 +59,22 @@ class CreatePersonalProjectsTable extends Migration
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
-        ]);
+            'source_link' => '',
+            'website_link' => '',
 
+        ]);*/
+
+        PersonalProject::create([
+            'slug' => 'my-laravel-online-cv',
+            'name' => 'My Online CV',
+            'color' => '#1e3799',
+            'color_light' => hex2rgba('#1e3799', 0.2),
+            'started_at' => \Carbon\Carbon::create(2017, 9, 1),
+            'ended_at' => null,
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'description_pt' => '',
+            'description_en' => '',
+            'description_es' => '',
+        ]);
     }
 }
