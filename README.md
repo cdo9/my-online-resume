@@ -1,4 +1,4 @@
-```:warning: in progress```
+:warning: Code & Readme are in progress.
 
 # My Online Resume
 This repo shows the code behind my online resume.
