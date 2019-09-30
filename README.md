@@ -1,9 +1,9 @@
-```:warning: in progress```
+:warning: Code & Readme are in progress.
 
 # My Online Resume
 This repo shows the code behind my online resume.
 The purpose of this is  to show my design & development skills.
-[View the live version : cdo9.space](https://cdo9.space).
+[View the live version at cdo9.space](https://cdo9.space).
 
 ## Installation With [Laravel Homestead](https://laravel.com/docs/6.x/homestead)
 * Clone the repo and configure your homestead.yaml and host file
