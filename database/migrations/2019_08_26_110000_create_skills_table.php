@@ -80,12 +80,12 @@ class CreateSkillsTable extends Migration
         $skillDesign = Skill::where('slug', 'design')->first();
         Skill::create(['slug' => 'ui-ux', 'name' => 'UI/UX', 'color' => '', 'parent_id' => $skillDesign->id]);
 
-        Skill::create(['slug' => 'seo', 'name' => 'SEO', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+        Skill::create(['slug' => 'seo', 'name' => 'SEO', 'color' => '#3498db', 'color_light' => hex2rgba('#3498db', 0.2), 'parent_id' => null]);
 
-        Skill::create(['slug' => 'deployment', 'name' => 'Deployment', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+        Skill::create(['slug' => 'deployment', 'name' => 'Deployment', 'color' => '#3498db', 'color_light' => hex2rgba('#3498db', 0.2), 'parent_id' => null]);
         //Skill::create(['slug' => 'homestead', 'name' => 'Deployment', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
 
-        Skill::create(['slug' => 'git', 'name' => 'GIT', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
+        Skill::create(['slug' => 'git', 'name' => 'GIT', 'color' => '#3498db', 'color_light' => hex2rgba('#3498db', 0.2), 'parent_id' => null]);
 
         Skill::create(['slug' => 'linux', 'name' => 'Linux', 'color' => '#20C20E', 'color_light' => hex2rgba('#20C20E', 0.2), 'parent_id' => null]);
 

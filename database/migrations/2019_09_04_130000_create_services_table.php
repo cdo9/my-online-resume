@@ -59,7 +59,7 @@ class CreateServicesTable extends Migration
             'name_es' => "",
         ]);
         Service::create([
-            'name_fr' => "Gestion/optimisation de base de donnée",
+            'name_fr' => "Gestion/optimisation de bases de données",
             'name_pt' => "Gestão/otimização de base de dados",
             'name_en' => "Database management/optimization",
             'name_es' => "",
