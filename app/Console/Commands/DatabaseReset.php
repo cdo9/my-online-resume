@@ -41,11 +41,12 @@ class DatabaseReset extends Command
         //if($this->confirm('Are you sure ?')) {
             $databaseName = env('DB_DATABASE');
             $databasePassword = env('DB_PASSWORD');
+            $databaseUser = env('DB_USERNAME');
             $this->info('Dropping database...');
-            exec("mysql --user=homestead --password=$databasePassword -e 'DROP DATABASE $databaseName;'");
+            exec("mysql --user=$databaseUser --password=$databasePassword -e 'DROP DATABASE $databaseName;'");
             $this->info('Database dropped');
             $this->info('Creating database...');
-            exec("mysql --user=homestead --password=$databasePassword -e 'CREATE DATABASE $databaseName;'");
+            exec("mysql --user=$databaseUser --password=$databasePassword -e 'CREATE DATABASE $databaseName;'");
             $this->info('Database created');
             //$this->info('Importing database...');
             //exec("mysql --user=homestead --password=$databasePassword $databaseName < db.sql");
