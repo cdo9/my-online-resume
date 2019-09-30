@@ -1,4 +1,4 @@
-:warning: Code & Readme are in progress.
+:warning: in development.
 
 # My Online Resume
 This repo shows the code behind my online resume.
@@ -12,4 +12,7 @@ The purpose of this is  to show my design & development skills.
 ## Built With
 
 * [Laravel](https://laravel.com) - The PHP Framework
+* [SASS](https://sass-lang.com) - CSS with superpowers
+* [BEM Notation](http://getbem.com/introduction/) - Methodology that helps you create reusable components
+* [FontAwesome 5](https://fontawesome.com) - The world's most popular icon set
 

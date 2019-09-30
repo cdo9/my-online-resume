@@ -21,6 +21,8 @@ class WhereSeekedJob extends Model {
             $html .= "{$whereSeekedJob->translated_name}";
             if($whereSeekedJobs->last() === $whereSeekedJob) {
                 $html .= ".";
+            } elseif($whereSeekedJobs[count($whereSeekedJobs)-2] === $whereSeekedJob) {
+                $html .= " ".trans('cv.or')." ";
             } else {
                 $html .= ", ";
             }

@@ -3,6 +3,11 @@
 return [
     'page_title' => 'Curriculum vitae',
     'me' => 'Eu',
+    'me_title' => ":name, :years anos com :yearsOfExperience anos de experiência",
+    'me_subtitle' => 'CDI Senior Fullstack Web Developer na RemplaFrance (meio período) e freelancer em Paris.',
+    'me_seeked-jobs' => 'Empregos desejados:',
+    'me_where-seeked-jobs' => 'Onde ?',
+    'me_contact' => 'Contato:',
     'skills' => 'Habilidades',
     'services' => 'Prestações',
     'projects' => 'Projetos',
@@ -14,4 +19,5 @@ return [
     'close_description' => 'Close',
     'open_view_more' => 'View more...',
     'close_view_more' => 'Close',
+    'or' => 'ou',
 ];

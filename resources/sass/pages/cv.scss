@@ -65,11 +65,11 @@
 }
 
 .cv__title {
-  @include font-size(20px);
+  @include font-size(18px);
   padding: 10px 0;
   margin-bottom: 10px;
   font-weight: bold;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   @include border-radius(5px);
 }
 

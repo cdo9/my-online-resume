@@ -1,7 +1,7 @@
 <h2 class="cv__title"><i class="fad fa-fw fa-chart-network"></i> @lang('cv.projects')</h2>
 <ul class="projects">
     @foreach($projects as $project)<li class="project project--50-50" style="border-left-color: {{ $project->color }};">
-            <h3 class="project__title">{{ $project->name }}</h3>
+            <div class="project__title">{{ $project->name }}</div>
             <div class="project__sub-title">{{ $project->translated_position }} @if($project->freelance) - @lang('cv.has_freelance') @endif</div>
 
             <div class="project__time">{{ $project->area }} - {{ readableStartAndEndDates($project->started_at, $project->ended_at) }}</div>

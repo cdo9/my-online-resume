@@ -65,16 +65,18 @@ class CreatePersonalProjectsTable extends Migration
         ]);*/
 
         PersonalProject::create([
-            'slug' => 'my-laravel-online-cv',
-            'name' => 'My Online CV',
+            'slug' => 'my-online-resume',
+            'name' => 'My Online Resume',
             'color' => '#1e3799',
             'color_light' => hex2rgba('#1e3799', 0.2),
-            'started_at' => \Carbon\Carbon::create(2017, 9, 1),
+            'started_at' => \Carbon\Carbon::create(2019, 8, 15),
             'ended_at' => null,
             'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'description_pt' => '',
             'description_en' => '',
             'description_es' => '',
+            'source_link' => 'https://github.com/cdo9/my-online-resume',
+            'website_link' => null,
         ]);
     }
 }
