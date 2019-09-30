@@ -655,11 +655,12 @@ body {
 }
 
 .cv__title {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   padding: 10px 0;
   margin-bottom: 10px;
   font-weight: bold;
+  text-transform: uppercase;
   border-radius: 5px;
 }
 
@@ -741,6 +742,12 @@ body {
 }
 
 .cv__me__text__item__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.cv__me__text__item__subtitle {
   font-size: 16px;
   font-size: 1rem;
   font-weight: bold;
@@ -778,6 +785,12 @@ body {
 
 .project--50-50 {
   width: 50%;
+}
+
+@media (max-width: 768px) {
+  .project--50-50 {
+    width: 100%;
+  }
 }
 
 .project__title {

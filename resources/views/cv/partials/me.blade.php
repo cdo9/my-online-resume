@@ -3,17 +3,18 @@
         <img src="{{ asset('images/memoji.gif') }}"/>
     </div><div class="cv__me__text">
             <div class="cv__me__text__item">
-                <h2 class="cv__title">
+                <span class="cv__me__text__item__title">
                     {{ __('cv.me_title', [
                     'name' => 'Christophe',
                     'years' => \Carbon\Carbon::parse('1993-10-03')->age,
                     'yearsOfExperience' =>  \Carbon\Carbon::now()->diffInYears('2008-10-03'),
                     ]) }}
-                </h2>
+                </span>
             </div>
             <div class="cv__me__text__item">
-                <span class="cv__me__text__item__title">{{ __('cv.me_subtitle') }}</span>
+                <span class="cv__me__text__item__subtitle">{{ __('cv.me_subtitle') }}</span>
             </div>
+            <br/>
             <div class="cv__me__text__item">
                 <span class="cv__me__text__item__label">{{ __('cv.me_seeked-jobs') }}</span>
                 <span class="cv__me__text__item__value">{{ $seekedJobs }}</span>

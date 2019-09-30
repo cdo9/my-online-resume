@@ -15,4 +15,6 @@ The purpose of this is  to show my design & development skills.
 * [SASS](https://sass-lang.com) - CSS with superpowers
 * [BEM Notation](http://getbem.com/introduction/) - Methodology that helps you create reusable components
 * [FontAwesome 5](https://fontawesome.com) - The world's most popular icon set
+* [Laravel Forge](https://forge.laravel.com) - Provision and deploy PHP applications
+* [Vultr](https://www.vultr.com/?ref=7320564) - Global Cloud Hosting
 
