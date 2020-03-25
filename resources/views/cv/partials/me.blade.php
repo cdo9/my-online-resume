@@ -5,7 +5,7 @@
             <div class="cv__me__text__item">
                 <span class="cv__me__text__item__title">
                     {{ __('cv.me_title', [
-                    'name' => 'Christophe',
+                    'name' => 'Breno',
                     'years' => \Carbon\Carbon::parse('1993-10-03')->age,
                     'yearsOfExperience' =>  \Carbon\Carbon::now()->diffInYears('2008-10-03'),
                     ]) }}
