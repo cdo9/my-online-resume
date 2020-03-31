@@ -1,31 +1,37 @@
 <h2 class="cv__title"><i class="fad fa-fw fa-chart-network"></i> @lang('cv.projects')</h2>
-<ul class="projects">
-    @foreach($projects as $project)<li class="project project--50-50" style="border-left-color: {{ $project->color }};">
-            <div class="project__title">{{ $project->name }}</div>
-            <div class="project__sub-title">{{ $project->translated_position }} @if($project->freelance) - @lang('cv.has_freelance') @endif</div>
-
-            <div class="project__time">{{ $project->area }} - {{ readableStartAndEndDates($project->started_at, $project->ended_at) }}</div>
-
-            <div class="project__tags">
-                <ul class="tags">
-                    @foreach($project->skills as $skill)
-                        <li class="tag" style="background-color: {{ $project->color_light }}; color: {{ $project->color }};">{{ $skill->name }}</li>
-                    @endforeach
-                </ul>
-            </div>
-            <div class="project__gallery">
-                {{-- todo
-                @foreach($project->skills as $skill)<div class="project__gallery__item">
-                        <img style="border-color: {{ $project->color }};" src="#">
-                    </div>@endforeach
+<div class="boxes boxes--2">
+    @foreach($projects as $project)<div class="box" style="border-left-color: {{ $project->color }};">
+            <div class="box__header">
+                <span class="box__title">{{ $project->name }}</span>
+                <div class="box__subtitle">{{ $project->translated_position }} {{-- @if($project->freelance) - @lang('cv.has_freelance') @endif --}}</div>
+                <div class="box__help">
+                    <i class="fad fa-map-marker-alt"></i> {{ $project->area }}
+                    <span class="italic">- {{ readableStartAndEndDates($project->started_at, $project->ended_at) }}</span>
                 </div>
-                --}}
+            </div>
+            <div class="box__body">
+                <div class="box__tags">
+                    <ul class="tags">
+                        @foreach($project->skills as $skill)
+                            <li class="tag" style="background-color: {{ $project->color_light }}; color: {{ $project->color }};">{{ $skill->name }}</li>
+                        @endforeach
+                    </ul>
+                </div>
             </div>
             @if($project->translated_description)
-                <div class="project__description js-open-close-container">
-                    <div class="project__description__open-close js-open-close-button" data-open-name="@lang('cv.open_description')" data-close-name="@lang('cv.close_description')"><i class='fad fa-long-arrow-alt-right'></i> @lang('cv.open_description')</div>
-                    <div class="project__description__text js-open-close-element hide">{!! $project->translated_description !!}</div>
+                <div class="box__more js-open-close-container">
+                    <div class="box__more__open-close js-open-close-button font-alt-style" data-open-name="@lang('cv.open_view_more')" data-close-name="@lang('cv.close_view_more')"><i class='far fa-long-arrow-alt-right'></i> @lang('cv.open_view_more')</div>
+                    <div class="box__more__content js-open-close-element hide">
+                        <div class="box__gallery">
+                            @foreach($project->skills()->limit(3)->get() as $skill)<div class="box__gallery__item">
+                                <img style="border-color: {{ $project->color }};" src="#">
+                            </div>@endforeach
+                        </div>
+                        <div class="box__description">
+                            {!! $project->translated_description !!}
+                        </div>
+                    </div>
                 </div>
             @endif
-        </li>@endforeach
-</ul>
+        </div>@endforeach
+</div>

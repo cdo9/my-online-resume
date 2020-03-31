@@ -40,5 +40,5 @@ $('.js-open-close-button').click(function () {
 function callbackOpenClose(button, element) {
     var openButtonName = button.attr('data-open-name');
     var closeButtonName = button.attr('data-close-name');
-    element.is(":visible") ? button.html("<i class='fad fa-long-arrow-alt-right'></i> "+openButtonName) : button.html("<i class='fad fa-long-arrow-alt-up'></i> "+closeButtonName);
+    element.is(":visible") ? button.html("<i class='far fa-long-arrow-alt-right'></i> "+openButtonName) : button.html("<i class='far fa-long-arrow-alt-up'></i> "+closeButtonName);
 }

@@ -71,9 +71,10 @@ class CreateSkillsTable extends Migration
 
         Skill::create(['slug' => 'js', 'name' => 'JavaScript', 'color' => '#d1a11e', 'color_light' => hex2rgba('#e1b12c', 0.2), 'parent_id' => null]);
         $skillJs = Skill::where('slug', 'js')->first();
-        Skill::create(['slug' => 'vue', 'name' => 'Vue.js', 'color' => '', 'parent_id' => $skillJs->id]);
         Skill::create(['slug' => 'react', 'name' => 'React.js', 'color' => '', 'parent_id' => $skillJs->id]);
+        Skill::create(['slug' => 'redux', 'name' => 'Redux', 'color' => '', 'parent_id' => $skillJs->id]);
         Skill::create(['slug' => 'react-native', 'name' => 'React Native', 'color' => '', 'parent_id' => $skillJs->id]);
+        Skill::create(['slug' => 'vue', 'name' => 'Vue.js', 'color' => '', 'parent_id' => $skillJs->id]);
         Skill::create(['slug' => 'jquery', 'name' => 'jQuery', 'color' => '', 'parent_id' => $skillJs->id]);
 
         Skill::create(['slug' => 'design', 'name' => 'Design', 'color' => '#B33771', 'color_light' => hex2rgba('#B33771', 0.2), 'parent_id' => null]);
@@ -82,12 +83,12 @@ class CreateSkillsTable extends Migration
 
         Skill::create(['slug' => 'seo', 'name' => 'SEO', 'color' => '#3498db', 'color_light' => hex2rgba('#3498db', 0.2), 'parent_id' => null]);
 
-        Skill::create(['slug' => 'deployment', 'name' => 'Deployment', 'color' => '#3498db', 'color_light' => hex2rgba('#3498db', 0.2), 'parent_id' => null]);
-        //Skill::create(['slug' => 'homestead', 'name' => 'Deployment', 'color' => '#2f3640', 'color_light' => hex2rgba('#2f3640', 0.2), 'parent_id' => null]);
-
-        Skill::create(['slug' => 'git', 'name' => 'GIT', 'color' => '#3498db', 'color_light' => hex2rgba('#3498db', 0.2), 'parent_id' => null]);
-
         Skill::create(['slug' => 'linux', 'name' => 'Linux', 'color' => '#20C20E', 'color_light' => hex2rgba('#20C20E', 0.2), 'parent_id' => null]);
+        $skillLinux = Skill::where('slug', 'linux')->first();
+        Skill::create(['slug' => 'git', 'name' => 'GIT', 'color' => '', 'parent_id' => $skillLinux->id]);
+        Skill::create(['slug' => 'homestead', 'name' => 'Homestead', 'color' => '',  'parent_id' => $skillLinux->id]);
+        Skill::create(['slug' => 'deployment', 'name' => 'Deployment', 'color' => '', 'parent_id' => $skillLinux->id]);
+
 
     }
 }

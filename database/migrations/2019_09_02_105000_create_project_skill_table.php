@@ -63,11 +63,8 @@ class CreateProjectSkillTable extends Migration
 
         // Attach to project Remplafrance
         $projectRemplafrance->attach($skillLaravel);
-        $projectRemplafrance->attach($skillHtml);
-        $projectRemplafrance->attach($skillSass);
         $projectRemplafrance->attach($skillResponsive);
         $projectRemplafrance->attach($skillSql);
-        $projectRemplafrance->attach($skillDesign);
         $projectRemplafrance->attach($skillUiUx);
         $projectRemplafrance->attach($skillSeo);
 
@@ -82,6 +79,7 @@ class CreateProjectSkillTable extends Migration
         $projectBdbuzz->attach($skillYii);
         $projectBdbuzz->attach($skillHtml);
         $projectBdbuzz->attach($skillSass);
+        $projectBdbuzz->attach($skillResponsive);
         $projectBdbuzz->attach($skillJquery);
 
         // Attach to project NolimBD

@@ -15,9 +15,7 @@ return [
     'trainings' => 'Études',
     'interests' => 'Intérêts',
     'has_freelance' => 'en freelance',
-    'open_description' => 'Voir la description',
-    'close_description' => 'Fermer la description',
-    'open_view_more' => 'En savoir plus...',
-    'close_view_more' => 'Fermer',
+    'open_view_more' => 'En savoir plus',
+    'close_view_more' => 'En savoir moins',
     'or' => 'ou',
 ];

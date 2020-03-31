@@ -48,21 +48,7 @@ class CreatePersonalProjectsTable extends Migration
 
     public function seed()
     {
-        /*PersonalProject::create([
-            'slug' => 'live-statistics',
-            'name' => 'Live Statistics',
-            'color' => '#1e3799',
-            'color_light' => hex2rgba('#1e3799', 0.2),
-            'started_at' => \Carbon\Carbon::create(2017, 9, 1),
-            'ended_at' => null,
-            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'description_pt' => '',
-            'description_en' => '',
-            'description_es' => '',
-            'source_link' => '',
-            'website_link' => '',
 
-        ]);*/
 
         PersonalProject::create([
             'slug' => 'my-online-resume',
@@ -76,7 +62,23 @@ class CreatePersonalProjectsTable extends Migration
             'description_en' => '',
             'description_es' => '',
             'source_link' => 'https://github.com/cdo9/my-online-resume',
-            'website_link' => null,
+            'website_link' => '',
+        ]);
+
+        PersonalProject::create([
+            'slug' => 'live-statistics',
+            'name' => 'Live Statistics',
+            'color' => '#1e3799',
+            'color_light' => hex2rgba('#1e3799', 0.2),
+            'started_at' => \Carbon\Carbon::create(2015, 10, 1),
+            'ended_at' => null,
+            'description_fr' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'description_pt' => '',
+            'description_en' => '',
+            'description_es' => '',
+            'source_link' => 'https://github.com/cdo9/live-statistics',
+            'website_link' => 'https://live-statistics.com/',
+
         ]);
     }
 }

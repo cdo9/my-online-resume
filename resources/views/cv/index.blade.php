@@ -13,12 +13,12 @@
                     <div class="cv__item cv__item--with-bg">
                         @include('cv.partials.projects')
                     </div>
+                    <div class="cv__item">
+                        @include('cv.partials.personal_projects')
+                    </div>
                 </div><div class="cv__column cv__column--secondary">
                     <div class="cv__item">
                         @include('cv.partials.services')
-                    </div>
-                    <div class="cv__item">
-                        @include('cv.partials.personal_projects')
                     </div>
                     <div class="cv__item">
                         @include('cv.partials.trainings')
